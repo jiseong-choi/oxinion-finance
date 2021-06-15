@@ -5,7 +5,7 @@ import List from "./components/List";
 interface IState {
   dividends: {
     ticker: string;
-    dividend: number;
+    amount: number;
     url: string;
     note?: string;
   }[];
@@ -15,8 +15,8 @@ function App() {
   const [dividends, setDividends] = useState<IState["dividends"]>([
     {
       ticker: "Microsoft",
-      dividend: 0.02,
-      url: "",
+      amount: 0.02,
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/480px-Microsoft_logo.svg.png",
       note: "The best tech stock",
     },
   ]);

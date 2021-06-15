@@ -4,7 +4,7 @@ import styled from "styled-components";
 interface IProps {
   dividends: {
     ticker: string;
-    dividend: number;
+    amount: number;
     url: string;
     note?: string;
   }[];
@@ -17,13 +17,22 @@ const TableList = styled.div`
 `;
 
 const List: React.FC<IProps> = ({ dividends }) => {
-  return (
-    <TableList>
-      {dividends.map((dividend) => {
-        return <div>{dividend.ticker}</div>;
-      })}
-    </TableList>
-  );
+  const dividendsList = (): JSX.Element[] => {
+    return dividends.map((dividend) => {
+      return (
+        <li className="List">
+        <div className="List-header">
+          <img src={dividend.url} alt="Logo" />
+          <h2>{dividend.ticker}</h2>
+        </div>
+        <small>${dividend.amount}</small>
+        <p>{dividend.note}</p>
+      </li>
+      )
+    });
+  };
+
+  return <TableList>{dividendsList()}</TableList>;
 };
 
 export default List;
