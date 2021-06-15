@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import List from "./components/List";
+
+interface IState {
+  dividends: {
+    ticker: string;
+    dividend: number;
+    url: string;
+    note?: string;
+  }[];
+}
 
 function App() {
+  const [dividends, setDividends] = useState<IState["dividends"]>([
+    {
+      ticker: "Microsoft",
+      dividend: 0.02,
+      url: "",
+      note: "The best tech stock",
+    },
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dividend Heros</h1>
+      <List dividends={dividends} />
     </div>
   );
 }
