@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# Dividend King
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Introduction & goal
+A web app that help you calculate the amount of dividend you can collect
 
-## Available Scripts
+✅ Display the amount of dividend with the current holdings
 
-In the project directory, you can run:
+✅ Dividend calendar
 
-### `yarn start`
+✅ Compare 1:1 for diviend records
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+✅ Shows the relavant stocks/ETFs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+🚀 Available link
+Tech stack
+I'd try MERN stack FE - client React, Next, Styled-components, This project has implemented with React.js and Next.js for the frontend. Once i get familier with FE skills, i would like to add some more features with BE skills like login functionality.
 
-### `yarn test`
+BE - server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+📚 API
+<https://polygon.io/docs/get_v2_reference_dividends__stocksTicker__anchor>
+<https://polygon.io/docs/get_v3_reference_tickers_anchor>
