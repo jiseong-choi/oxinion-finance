@@ -26,6 +26,32 @@ Live Demo <https://diviendking.netlify.app>
 
 - Add more integrations
 
+## 🗂 Web front structure 
+```text
+.
+├── dist
+├── public
+├── src
+│    ├── index.html
+│    ├── index.tsx
+│    ├── App.tsx
+│    ├── store.ts
+│    ├── components
+│    │   ├── containers
+│    │   └── presentational
+│    ├── routes
+│    ├── utils
+│    ├── slices
+│    ├── constants
+│    ├── queries
+│    └── pages
+│
+
+```
+
+
+
+
 ## 🚀 Deployment
 
 To deploy this project run
