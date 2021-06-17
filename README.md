@@ -1,8 +1,6 @@
 # Dividend Kings
 
-> > > > > > > Stashed changes
-
-Build your wealth with a dividend growth tool.
+The main object of this project is to help you maximise the dividend income with diviend stocks.
 
 Live Demo <https://diviendking.netlify.app>
 

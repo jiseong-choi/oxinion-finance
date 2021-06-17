@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dividend Heros</h1>
+      <h1>Dividend Kings</h1>
       <List dividends={dividends} />
     </div>
   );
