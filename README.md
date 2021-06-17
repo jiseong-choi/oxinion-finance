@@ -1,13 +1,10 @@
-<<<<<<< Updated upstream
-
-# Dividend King
-=======
 # Dividend Kings
->>>>>>> Stashed changes
+
+> > > > > > > Stashed changes
 
 Build your wealth with a dividend growth tool.
 
-Live Demo https://diviendking.netlify.app
+Live Demo <https://diviendking.netlify.app>
 
 ## Features
 
@@ -15,10 +12,8 @@ Live Demo https://diviendking.netlify.app
 
 ✅ A dividend Calendar
 
-✅ Set the goal 
+✅ Set the goal
 
-
-  
 ## Tech Stack
 
 **Language:** TypeScript, JavaScript
@@ -27,14 +22,12 @@ Live Demo https://diviendking.netlify.app
 
 **Server:** Node, Firebase
 
-  
 ## Roadmap
 
 - Additional browser support
 
 - Add more integrations
 
-  
 ## 🚀 Deployment
 
 To deploy this project run
@@ -43,12 +36,11 @@ To deploy this project run
   npm run deploy
 ```
 
-  
 ## API Reference
 
-It's all avaiable through istock-api that is used json-server. 
+It's all avaiable through istock-api that is used json-server.
 
-#### Get all items
+### Get all items
 
 ```http
   GET /api/stocks
@@ -58,7 +50,7 @@ It's all avaiable through istock-api that is used json-server.
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
-#### Get item
+### Get item
 
 ```http
   GET /api/stocks/${id}
@@ -71,5 +63,3 @@ It's all avaiable through istock-api that is used json-server.
 #### add(num1, num2)
 
 Takes two numbers and returns the sum.
-
-  
