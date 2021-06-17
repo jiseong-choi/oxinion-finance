@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import List from "./components/List";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Signup from "./Pages/Signup";
 
 interface IState {
   dividends: {
@@ -22,8 +24,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dividend Kings</h1>
-      <List dividends={dividends} />
+      <Router>
+        <Switch>
+          <Route path="/signup">
+            <Signup />
+          </Route>
+          <Route exact path="/">
+            <h1>Dividend Kings</h1>
+            <List dividends={dividends} />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
