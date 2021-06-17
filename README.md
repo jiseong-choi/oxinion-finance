@@ -32,20 +32,19 @@ Live Demo <https://diviendking.netlify.app>
 ├── dist
 ├── public
 ├── src
-│    ├── index.html
-│    ├── index.tsx
-│    ├── App.tsx
-│    ├── store.ts
-│    ├── components
-│    │   ├── containers
-│    │   └── presentational
-│    ├── routes
-│    ├── utils
-│    ├── slices
-│    ├── constants
-│    ├── queries
-│    └── pages
-│
+    ├── index.tsx
+    ├── App.tsx
+    ├── store.ts
+    ├── components
+    │   ├── containers
+    │   └── presentational
+    ├── routes
+    ├── utils
+    ├── slices
+    ├── constants
+    ├── queries
+    └── pages
+
 
 ```
 
