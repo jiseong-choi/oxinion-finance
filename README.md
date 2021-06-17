@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 
 # Dividend King
+=======
+# Dividend Kings
+>>>>>>> Stashed changes
 
 Build your wealth with a dividend growth tool.
 
