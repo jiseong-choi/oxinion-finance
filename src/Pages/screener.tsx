@@ -5,7 +5,7 @@ const Screener = () => {
   return (
     <div>
       <Navbar />
-      screen
+      screen all the list
     </div>
   );
 };
