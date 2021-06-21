@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/common/Header/Header";
 
 const Calculator = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       calculator
     </div>
   );

@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
-import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/common/Header/Header";
 import Table from "../components/Table";
 
 const SignForm = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
 `;
 
 const Screener = () => {
@@ -42,7 +43,7 @@ const Screener = () => {
 
   return (
     <>
-      <Navbar />
+      <Header />
       <SignForm>
         <Table columns={columns} data={data} />
       </SignForm>

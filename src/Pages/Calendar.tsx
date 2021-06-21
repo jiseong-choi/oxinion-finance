@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/common/Header/Header";
 
 const Calendar = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       Div calendar by each month
     </div>
   );
