@@ -26,7 +26,8 @@ Live Demo <https://diviendking.netlify.app>
 
 - Add more integrations
 
-## 🗂 Web front structure 
+## 🗂 folder directory structure
+
 ```text
 .
 ├── dist
@@ -47,9 +48,6 @@ Live Demo <https://diviendking.netlify.app>
 
 
 ```
-
-
-
 
 ## 🚀 Deployment
 
