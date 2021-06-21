@@ -1,17 +1,16 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-// import Signup from "./Pages/Screener";
 import Calculator from "./Pages/Calculator";
-import Screener from "./Pages/Screener";
+import News from "./Pages/News";
 import Calendar from "./Pages/Calendar";
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/screener">
-          <Screener />
+        <Route path="/news">
+          <News />
         </Route>
 
         <Route path="/calculator">
