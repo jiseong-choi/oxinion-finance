@@ -2,7 +2,7 @@
 
 The main object of this project is to help you maximize the dividend income with dividend stocks.
 
-Live Demo <https://diviendking.netlify.app>
+Live Demo <https://diviend-kings.netlify.app>
 
 ## Features
 
