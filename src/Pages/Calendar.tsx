@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 
-const Screener = () => {
+const Calendar = () => {
   return (
     <div>
       <Navbar />
-      screen
+      Div calendar by each month
     </div>
   );
 };
 
-export default Screener;
+export default Calendar;

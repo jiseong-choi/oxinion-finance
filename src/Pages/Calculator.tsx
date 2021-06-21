@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 
-const Screener = () => {
+const Calculator = () => {
   return (
     <div>
       <Navbar />
-      screen
+      calculator
     </div>
   );
 };
 
-export default Screener;
+export default Calculator;

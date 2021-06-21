@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
   display: flex;
@@ -19,9 +20,15 @@ const Navbar = () => {
       <h3>Logo</h3>
       <input type="text" placeholder="Search for symbols" />
       <NavLinks>
-        <li>Calendar</li>
-        <li>Calculator</li>
-        <li>Screener</li>
+        <li>
+          <Link to="/calendar">Calendar</Link>
+        </li>
+        <li>
+          <Link to="/calculator">Calculator</Link>
+        </li>
+        <li>
+          <Link to="/screener">Screener</Link>
+        </li>
       </NavLinks>
     </Nav>
   );

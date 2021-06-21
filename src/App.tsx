@@ -1,7 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Signup from "./Pages/Signup";
 import Home from "./Pages/Home";
+import Signup from "./Pages/Signup";
+import Calculator from "./Pages/Calculator";
+import Calendar from "./Pages/Calendar";
+import Screener from "./Pages/Screener";
 
 function App() {
   return (
@@ -11,13 +14,13 @@ function App() {
           <Signup />
         </Route>
         <Route path="/screener">
-          <Signup />
+          <Screener />
         </Route>
         <Route path="/calculator">
-          <Signup />
+          <Calculator />
         </Route>
         <Route path="/calendar">
-          <Signup />
+          <Calendar />
         </Route>
         <Route exact path="/">
           <Home />
