@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import logo from "../../Assets/Images/dk_logo.png";
+
 const Nav = styled.nav`
   display: flex;
   justify-content: space-around;
@@ -17,7 +19,7 @@ const NavLinks = styled.ul`
 const Navbar = () => {
   return (
     <Nav>
-      <h3>Logo</h3>
+      <img src={logo} alt="Dividend Kings" />
       <input type="text" placeholder="Search for symbols" />
       <NavLinks>
         <li>
