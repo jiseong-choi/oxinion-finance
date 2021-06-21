@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Signup from "./Pages/Signup";
 import Calculator from "./Pages/Calculator";
 import Calendar from "./Pages/Calendar";
-// import Screener from "./Pages/Screener";
+import Screener from "./Pages/Screener";
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
         <Route path="/signup">
           <Signup />
         </Route>
-        {/* <Route path="/screener">
+        <Route path="/screener">
           <Screener />
-        </Route> */}
+        </Route>
         <Route path="/calculator">
           <Calculator />
         </Route>
