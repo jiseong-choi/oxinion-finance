@@ -9,11 +9,11 @@ Live Demo <https://diviend-kings.netlify.app>
 
 ## Features
 
-✅ Display amount of dividend depending on the shares - If you log in, you can keep tracking your own portfolio.
+✅ A calculator, Display amount of dividend depending on the shares - If you log in, you can keep tracking your own portfolio.
 
-✅ A dividend Calendar
+✅ A monthly calendar
 
-✅ Set the goal
+✅ Set the goal with the list of screeners 
 
 ## Tech Stack
 
