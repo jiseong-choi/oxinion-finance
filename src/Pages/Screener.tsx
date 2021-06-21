@@ -7,7 +7,7 @@ const SignForm = styled.form`
   justify-content: center;
 `;
 
-const News = () => {
+const Screener = () => {
   return (
     <div>
       <div className="signup-container">
@@ -35,4 +35,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Screener;

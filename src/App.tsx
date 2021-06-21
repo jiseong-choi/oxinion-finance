@@ -2,24 +2,20 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Calculator from "./Pages/Calculator";
-import News from "./Pages/News";
+import Screener from "./Pages/Screener";
 import Calendar from "./Pages/Calendar";
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/news">
-          <News />
+        <Route path="/screener">
+          <Screener />
         </Route>
 
         <Route path="/calculator">
           <Calculator />
         </Route>
-
-        {/* <Route path="/screener">
-          <Screener />
-        </Route> */}
 
         <Route path="/calendar">
           <Calendar />
