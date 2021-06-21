@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Signup from "./Pages/Signup";
+// import Signup from "./Pages/Screener";
 import Calculator from "./Pages/Calculator";
 import Screener from "./Pages/Screener";
 import Calendar from "./Pages/Calendar";
@@ -10,17 +10,17 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/signup">
-          <Signup />
+        <Route path="/screener">
+          <Screener />
         </Route>
 
         <Route path="/calculator">
           <Calculator />
         </Route>
 
-        <Route path="/screener">
+        {/* <Route path="/screener">
           <Screener />
-        </Route>
+        </Route> */}
 
         <Route path="/calendar">
           <Calendar />
