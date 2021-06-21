@@ -13,11 +13,12 @@ function App() {
         <Route path="/signup">
           <Signup />
         </Route>
-        <Route path="/screener">
-          <Screener />
-        </Route>
+
         <Route path="/calculator">
           <Calculator />
+        </Route>
+        <Route path="/screener">
+          <Screener />
         </Route>
         <Route path="/calendar">
           <Calendar />

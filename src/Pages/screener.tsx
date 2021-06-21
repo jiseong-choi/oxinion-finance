@@ -4,8 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 const Screener = () => {
   return (
     <div>
-      <Navbar />
-      screen all the list
+      <Navbar />A list of stocks
     </div>
   );
 };
