@@ -19,8 +19,24 @@ export const HeaderGroup = styled.header`
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
   width: 100%;
+`;
+
+export const Input = styled.input`
+  width: 220px;
+  height: 36px;
+  position: relative;
+  box-sizing: border-box;
+  background: rgba(179, 191, 201, 0.15);
+  line-height: 33px;
+  padding-left: 37px;
+  border-radius: 19px;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const NavLinks = styled.ul`
@@ -31,7 +47,8 @@ export const NavLinks = styled.ul`
 `;
 
 export const StyledLogo = styled.div`
-  display: inline-block;
+  width: 128px;
+  height: 100%;
   img {
     height: 100%;
   }
