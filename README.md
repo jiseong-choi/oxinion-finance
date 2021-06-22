@@ -5,7 +5,7 @@
 
 The main object of this project is to help you maximize the dividend income with dividend stocks.
 
-Live Demo <https://diviend-kings.netlify.app>
+Live Demo <https://dividend-kings.vercel.app>
 
 ## Features
 
@@ -15,6 +15,7 @@ Live Demo <https://diviend-kings.netlify.app>
 
 ✅ Set the goal with the list of screeners 
 
+✅ CRUD - Create(Add) stocks? | Read a list of port? | Update the amount of shares you own | Delete the stock from the list 
 ## Tech Stack
 
 **Language:** TypeScript, JavaScript
