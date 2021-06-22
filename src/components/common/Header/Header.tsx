@@ -9,8 +9,11 @@ const Header = () => {
     <HeaderGroup>
       <Nav>
         <StyledLogo>
-          <img src={logo} alt="Dividend Kings" />
+          <Link to="/">
+            <img src={logo} alt="Dividend Kings" />
+          </Link>
         </StyledLogo>
+
         <input type="text" placeholder="Search for symbols" />
         <NavLinks>
           <li>
