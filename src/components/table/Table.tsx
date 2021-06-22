@@ -1,5 +1,6 @@
 import React from "react";
 import { useTable } from "react-table";
+import { StyledTable } from "./styles";
 
 const Table = ({ columns, data }: { columns: any; data: any }) => {
   const {
@@ -15,7 +16,7 @@ const Table = ({ columns, data }: { columns: any; data: any }) => {
 
   return (
     // apply the table props
-    <table {...getTableProps()}>
+    <StyledTable {...getTableProps()}>
       <thead>
         {
           // Loop over the header rows
@@ -67,7 +68,7 @@ const Table = ({ columns, data }: { columns: any; data: any }) => {
           })
         }
       </tbody>
-    </table>
+    </StyledTable>
   );
 };
 
