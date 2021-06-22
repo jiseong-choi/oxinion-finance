@@ -88,3 +88,7 @@ It's all avaiable through istock-api that is used json-server.
 #### add(num1, num2)
 
 Takes two numbers and returns the sum.
+
+
+## Upcoming Features
+- Send an email notification whenever corp announces a new dividend with Github Action? 
