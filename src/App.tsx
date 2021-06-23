@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Calculator from "./Pages/Calculator";
 import Screener from "./Pages/Screener";
-import Calendar from "./Pages/Calendar";
+import Calendar from "./Pages/CalendarPage";
 
 function App() {
   return (

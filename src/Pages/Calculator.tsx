@@ -13,7 +13,27 @@ const Calculator = () => {
   return (
     <div>
       <Header />
-      <Calculator>This is a calculator tool for your income</Calculator>
+      <Calculator>
+        <h1>Dividend calculator - CRUD(the list)</h1>
+        <small>Calculate the value of your latest dividend</small>
+        <small>simple or similar as therich app? </small>
+        <ul>
+          <li className="stock">
+            <h2>MA</h2>
+            <small>0.026782 shares</small>
+
+            <div>Expected div : $0.01</div>
+            <div>$0.25 per share</div>
+          </li>
+          <li className="stock">
+            <h2>PEP</h2>
+            <small>2 shares</small>
+
+            <div>Expected div : $${1.075 * 0.85}</div>
+            <div>$1.075 per share</div>
+          </li>
+        </ul>
+      </Calculator>
     </div>
   );
 };
