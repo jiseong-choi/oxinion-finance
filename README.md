@@ -6,7 +6,7 @@ The main object of this project is to help you maximize the dividend income with
 
 Live Demo <https://dividenddb.vercel.app>
 
-API Demo <https://dividenddb.vercel.app/>
+API Demo <https://dividenddb.herokuapp.com/>
 
 ## Features
 
