@@ -36,7 +36,7 @@ const Screener = () => {
   // Using useEffect to call the API once mounted
   useEffect(() => {
     (async () => {
-      const result = await axios("https://istock-api.herokuapp.com/stocks");
+      const result = await axios("https://dividenddb.herokuapp.com/stocks");
       setData(result.data);
     })();
   }, []);
