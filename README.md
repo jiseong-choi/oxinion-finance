@@ -1,6 +1,6 @@
 # DividendDB
 
-![0cfa28f7818e4cdc899aa77703e15b8c (1)](https://user-images.githubusercontent.com/40842018/123391830-5e32bb00-d5d7-11eb-8318-4cd8c7f89589.png)
+![dividenddb_logo](https://user-images.githubusercontent.com/40842018/123397214-2169c280-d5dd-11eb-9589-7ad046426c03.png)
 
 The main object of this project is to help you maximize the dividend income with dividend stocks.
 
