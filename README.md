@@ -4,7 +4,8 @@
 
 The main object of this project is to help you maximize the dividend income with dividend stocks.
 
-Live Demo <https://dividend-kings.vercel.app>
+Live Demo <https://dividenddb.vercel.app>
+
 API Demo <https://dividenddb.vercel.app/>
 
 ## Features
@@ -15,7 +16,7 @@ API Demo <https://dividenddb.vercel.app/>
 
 ✅ Set the goal with the list of screeners
 
-✅ CRUD - Create(Add) stocks? | Read a list of port? | Update the amount of shares you own | Delete the stock from the list 
+✅ CRUD - Create(Add) stocks? | Read a list of port? | Update the amount of shares you own | Delete the stock from the list
 
 ## Tech Stack
 
@@ -92,4 +93,4 @@ Takes two numbers and returns the sum.
 
 ## Upcoming Features
 
-- Send an email notification whenever corp announces a new dividend with Github Action? 
+- Send an email notification whenever corp announces a new dividend with Github Action?
