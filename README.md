@@ -1,5 +1,5 @@
 # DividendDB
-![df965941913a4129aff0d888414d83c9](https://user-images.githubusercontent.com/40842018/122769733-c9cb0e80-d2df-11eb-8d9f-268f8072ed88.png)
+![0cfa28f7818e4cdc899aa77703e15b8c (1)](https://user-images.githubusercontent.com/40842018/123391830-5e32bb00-d5d7-11eb-8318-4cd8c7f89589.png)
 
 
 
