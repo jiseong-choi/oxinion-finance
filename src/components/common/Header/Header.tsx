@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HeaderGroup, Nav, NavLinks, StyledLogo, Input } from "./styles";
 
-import logo from "../../../Assets/Images/dk_logo.png";
+import logo from "../../../Assets/Images/dividenddb_logo.png";
 
 const Header = () => {
   return (

@@ -47,8 +47,8 @@ export const NavLinks = styled.ul`
 `;
 
 export const StyledLogo = styled.div`
-  width: 128px;
-  height: 100%;
+  width: 80%;
+  height: 90%;
   img {
     height: 100%;
   }
