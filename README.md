@@ -18,6 +18,8 @@ API Demo <https://dividenddb.herokuapp.com/>
 
 ✅ CRUD - Create(Add) stocks? | Read a list of port? | Update the amount of shares you own | Delete the stock from the list
 
+AUTH, CRUD, Search, API fetch
+
 ## Tech Stack
 
 **Language:** TypeScript, JavaScript
