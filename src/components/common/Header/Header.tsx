@@ -23,7 +23,7 @@ const Header = () => {
             <Link to="/calculator">Calculator</Link>
           </li>
           <li>
-            <Link to="/screener">Screener</Link>
+            <Link to="/screener">OXINION 100</Link>
           </li>
         </NavLinks>
       </Nav>

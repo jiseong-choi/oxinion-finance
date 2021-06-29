@@ -44,7 +44,7 @@ const Screener = () => {
   return (
     <>
       <Header />
-      <h2>Dividend Screener</h2>
+      <h2>Dividend Screener - filter from OXINION 100</h2>
       several investment ideas with basic info and filter
       <SignForm>
         <Table columns={columns} data={data} />
