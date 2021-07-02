@@ -12,7 +12,7 @@ const Header = () => {
           <img src={logo} alt="Dividend Kings" />
         </Link>
       </StyledLogo>
-      
+
       <Nav>
         <Input type="text" placeholder="Search for symbols" />
         <NavLinks>
@@ -23,7 +23,7 @@ const Header = () => {
             <Link to="/calculator">Calculator</Link>
           </li>
           <li>
-            <Link to="/screener">OXINION 100</Link>
+            <Link to="/screener">Screener</Link>
           </li>
         </NavLinks>
       </Nav>
