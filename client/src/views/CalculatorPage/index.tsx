@@ -3,11 +3,9 @@ import {
   CalculatorLayout,
   CalculatorHeader,
   CalculatorSummary,
-  Stock,
-  StockAlert,
-  StockList,
 } from "./styles";
 import StockInsert from "../../components/common/StockInsert/StockInsert";
+ import StockList from "../../components/common/StockList/StockList";
 
 const Calculator = () => {
   return (
@@ -35,16 +33,7 @@ const Calculator = () => {
           </div>
         </CalculatorSummary>
         <StockInsert />
-        <StockList>
-          <Stock>
-            <h2>MA</h2>
-            <small>0.026782 shares</small>
-
-            <div>Expected div : $0.01</div>
-            <div>$0.25 per share</div>
-            <StockAlert>Will be payed on June 24</StockAlert>
-          </Stock>
-        </StockList>
+        <StockList />
       </CalculatorLayout>
     </div>
   );
