@@ -1,16 +1,9 @@
 import React from "react";
-import Header from "../components/common/Header/Header";
+import Header from "../../components/common/Header/Header";
 import styled from "styled-components";
+import { CalculatorLayout } from "./styles";
 
 const Calculator = () => {
-  const Calculator = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-  `;
-
   const Stock = styled.li`
     max-width: 300px;
     margin: 70px auto 0px;
@@ -33,7 +26,7 @@ const Calculator = () => {
   return (
     <div>
       <Header />
-      <Calculator>
+      <CalculatorLayout>
         <h1>Dividend calculator - CRUD(the list)</h1>
         <small>Calculate the value of your latest dividend</small>
         <small>simple or similar as therich app? </small>
@@ -56,7 +49,7 @@ const Calculator = () => {
             <StockAlert>Will be payed on June 24</StockAlert>
           </Stock>
         </ul>
-      </Calculator>
+      </CalculatorLayout>
     </div>
   );
 };
