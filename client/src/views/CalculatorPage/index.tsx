@@ -1,37 +1,41 @@
-import React from "react";
 import Header from "../../components/common/Header/Header";
-import styled from "styled-components";
-import { CalculatorLayout } from "./styles";
+import {
+  CalculatorLayout,
+  CalculatorHeader,
+  CalculatorSummary,
+  Stock,
+  StockAlert,
+  StockList,
+} from "./styles";
+import StockInsert from "../../components/common/StockInsert/StockInsert";
 
 const Calculator = () => {
-  const Stock = styled.li`
-    max-width: 300px;
-    margin: 70px auto 0px;
-    padding: 60px 50px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    background: rgb(244, 247, 251);
-    border-radius: 12px;
-    flex-direction: column;
-  `;
-
-  const StockAlert = styled.p`
-    background-color: #e3e5e6;
-    width: 100%;
-  `;
-
   return (
     <div>
       <Header />
       <CalculatorLayout>
         <h1>Dividend calculator - CRUD(the list)</h1>
-        <small>Calculate the value of your latest dividend</small>
-        <small>simple or similar as therich app? </small>
-        <h1>Overall Expected Dividend: $100</h1>
-        <ul>
+
+        <CalculatorHeader>
+          <h1>Your Amazing Portfolio</h1>
+        </CalculatorHeader>
+
+        <CalculatorSummary>
+          <div>
+            <p>Portfolio Value</p>
+            <h3>$7010.66</h3>
+          </div>
+          <div>
+            <p>Expected Income</p>
+            <h3>$0.69</h3>
+          </div>
+          <div>
+            <p>Portfolio Yield</p>
+            <h3>2.54%</h3>
+          </div>
+        </CalculatorSummary>
+        <StockInsert />
+        <StockList>
           <Stock>
             <h2>MA</h2>
             <small>0.026782 shares</small>
@@ -40,15 +44,7 @@ const Calculator = () => {
             <div>$0.25 per share</div>
             <StockAlert>Will be payed on June 24</StockAlert>
           </Stock>
-          <Stock>
-            <h2>PEP</h2>
-            <small>2 shares</small>
-
-            <div>Expected div : $${1.075 * 0.85}</div>
-            <div>$1.075 per share</div>
-            <StockAlert>Will be payed on June 24</StockAlert>
-          </Stock>
-        </ul>
+        </StockList>
       </CalculatorLayout>
     </div>
   );

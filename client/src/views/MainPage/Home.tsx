@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../../components/common/Header/Header";
 import { Button } from "../../components/common/Button";
 import HomeImg from "../../Assets/Images/smartphone.png";
+import DataExample from "../../components/DataExample";
 
 const HomeContent = styled.div`
   /* display: flex;
@@ -48,6 +49,7 @@ const Home = () => {
           <Button type="button">Get Started</Button>
         </DescContent>
         <ImgExpression> </ImgExpression>
+        <DataExample />
       </HomeContent>
     </div>
   );
