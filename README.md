@@ -24,9 +24,9 @@ AUTH, CRUD, Search, API fetch
 
 **Language:** TypeScript, JavaScript
 
-**Client:** React, Redux
+**Client:** React, Redux, Styled-components
 
-**Server:** Node, Firebase
+**Server:** Node, MongoDB
 
 ## Roadmap
 

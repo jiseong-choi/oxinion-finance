@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../components/common/Header/Header";
-import { Button } from "../components/common/Button";
-import HomeImg from "../Assets/Images/smartphone.png";
+import Header from "../../components/common/Header/Header";
+import { Button } from "../../components/common/Button";
+import HomeImg from "../../Assets/Images/smartphone.png";
 
 const HomeContent = styled.div`
   /* display: flex;
