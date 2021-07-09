@@ -2,13 +2,12 @@ import React from "react";
 import StockItem from "../StockItem/StockItem";
 import { StockListContainer } from "./styles";
 
-const StockList = () => {
+const StockList = ({ stocks }: { stocks: any }) => {
   return (
     <StockListContainer>
-      <StockItem />
-      <StockItem />
-      <StockItem />
-      <StockItem />
+      {stocks.map((stock: any) => (
+        <StockItem stock={stock} key={stock} />
+      ))}
     </StockListContainer>
   );
 };
