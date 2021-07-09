@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 import Header from "../../components/common/Header/Header";
 import Table from "../../components/table/Table";
+import { ScrennerContainer } from "./styles";
 
 const SignForm = styled.div`
   display: flex;
@@ -42,14 +43,14 @@ const Screener = () => {
   }, []);
 
   return (
-    <>
+    <ScrennerContainer>
       <Header />
       <h2>Dividend Screener - filter from OXINION 100</h2>
       several investment ideas with basic info and filter
       <SignForm>
         <Table columns={columns} data={data} />
       </SignForm>
-    </>
+    </ScrennerContainer>
   );
 };
 
