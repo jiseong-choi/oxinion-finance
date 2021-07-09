@@ -2,13 +2,14 @@ import React from "react";
 import { RiDeleteBin2Line } from "react-icons/ri";
 import { StockAlert, StockListItem, RemoveBox } from "./styles";
 
-const StockItem = (stock: any) => {
-  const { name } = stock.stock;
+const StockItem = ({ stock }: any) => {
+  const { text } = stock;
 
   return (
     <StockListItem>
-      <h2>Name: {name}</h2>
-      <small>0.666 shares</small>
+      <h2>Name </h2>
+      <pre>{text}</pre>
+      <small>shares</small>
 
       <div>Expected div : $0.66</div>
       <div>$0.66 per share</div>
