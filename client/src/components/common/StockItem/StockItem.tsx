@@ -1,5 +1,6 @@
 import React from "react";
-import { StockAlert, StockListItem } from "./styles";
+import { RiDeleteBin2Line } from "react-icons/ri";
+import { StockAlert, StockListItem, RemoveBox } from "./styles";
 
 const StockItem = () => {
   return (
@@ -9,7 +10,10 @@ const StockItem = () => {
 
       <div>Expected div : $0.01</div>
       <div>$0.25 per share</div>
-      <StockAlert>Will be payed on June 24</StockAlert>
+      <StockAlert>Will be paid on June 24</StockAlert>
+      <RemoveBox>
+        <RiDeleteBin2Line />
+      </RemoveBox>
     </StockListItem>
   );
 };

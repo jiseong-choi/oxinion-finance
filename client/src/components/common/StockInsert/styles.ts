@@ -29,3 +29,16 @@ export const AddButton = styled.button`
     background: #0f55de;
   }
 `;
+
+export const EditHoldingsButton = styled.button`
+  width: auto;
+  height: 48px;
+  min-width: 48px;
+  min-height: auto;
+  border-radius: 24px;
+  padding: 0.75rem 1.25rem;
+  background-color: #f4f5f7;
+  color: #000;
+  font-weight: 400;
+  cursor: pointer;
+`;

@@ -13,3 +13,7 @@ export const StockAlert = styled.p`
   background-color: #e3e5e6;
   width: 100%;
 `;
+
+export const Checkbox = styled.div``;
+
+export const RemoveBox = styled.div``;
