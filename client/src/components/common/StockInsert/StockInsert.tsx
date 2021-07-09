@@ -24,11 +24,6 @@ const StockInsert = ({ onInsert }: any) => {
     [onInsert, value]
   );
 
-  const onClick = useCallback(() => {
-    onInsert(value);
-    setValue("");
-  }, [onInsert, value]);
-
   return (
     <InsertForm onSubmit={onSubmit}>
       <InsertInput
@@ -36,7 +31,7 @@ const StockInsert = ({ onInsert }: any) => {
         value={value}
         onChange={onChange}
       />
-      <AddButton type="submit" onClick={onClick}>
+      <AddButton type="submit">
         <MdAdd />
       </AddButton>
       <EditHoldingsButton>Edit Holdings</EditHoldingsButton>
