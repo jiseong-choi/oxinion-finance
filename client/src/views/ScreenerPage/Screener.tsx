@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
-import Header from "../components/common/Header/Header";
-import Table from "../components/table/Table";
+import Header from "../../components/common/Header/Header";
+import Table from "../../components/table/Table";
 
 const SignForm = styled.div`
   display: flex;

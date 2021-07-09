@@ -42,7 +42,7 @@ const Home = () => {
               dividend income
             </h1>
             <p>
-              Dividend King is a tool to track Everything You Need to Know About
+              DividendDB is a tool to track Everything You Need to Know About
               <span>Dividends</span>.Sign up and get started today.
             </p>
           </Title>
