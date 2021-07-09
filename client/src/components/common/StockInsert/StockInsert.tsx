@@ -7,7 +7,7 @@ import {
   EditHoldingsButton,
 } from "./styles";
 
-const StockInsert = (onInsert: any) => {
+const StockInsert = ({ onInsert }: any) => {
   const [value, setValue] = useState("");
 
   const onChange = useCallback((e) => {
