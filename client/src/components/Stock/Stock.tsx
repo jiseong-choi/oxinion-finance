@@ -15,7 +15,7 @@ const Stock = () => {
         const responseStockDetails = res.data;
         setStockDetails(responseStockDetails);
       });
-  }, []);
+  }, [ticker]);
 
   console.log(stockDetails);
 
