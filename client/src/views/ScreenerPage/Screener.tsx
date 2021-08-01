@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/common/Header/Header";
+import ScreenerMenu from "../../components/ScreenerMenu/ScreenerMenu";
 import StockList from "../../components/StockList/StockList";
 import { ScrennerContainer } from "./styles";
 
@@ -7,8 +8,8 @@ const Screener = () => {
   return (
     <ScrennerContainer>
       <Header />
-      <h2>Dividend Screener - filter func</h2>
-      several investment ideas with basic info and filter
+      <h2>Screener</h2>
+      <ScreenerMenu />
       <StockList />
     </ScrennerContainer>
   );
