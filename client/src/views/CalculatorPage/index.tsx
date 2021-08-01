@@ -5,8 +5,8 @@ import {
   CalculatorHeader,
   CalculatorSummary,
 } from "./styles";
-import StockInsert from "../../components/common/StockInsert/StockInsert";
-import StockList from "../../components/common/StockList/StockList";
+import StockInsert from "../../components/StockInsert/StockInsert";
+import StockList from "../../components/StockList/StockList";
 
 const Calculator = () => {
   const [stocks, setStocks] = useState([
@@ -58,7 +58,7 @@ const Calculator = () => {
           </div>
         </CalculatorSummary>
         <StockInsert onInsert={onInsert} />
-        <StockList stocks={stocks} />
+        <StockList />
       </CalculatorLayout>
     </div>
   );

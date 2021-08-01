@@ -1,0 +1,34 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { StockListContainer } from "./styles";
+import { CircularProgress } from "@material-ui/core";
+import StockCard from "../Stock/StockCard";
+
+const StockList = () => {
+  const [stocks, setStocks] = useState([]);
+
+  // Using useEffect to call the API once mounted
+  useEffect(() => {
+    axios.get("https://dividenddb.herokuapp.com/stocks").then((res) => {
+      const responseStocks = res.data;
+      setStocks(responseStocks);
+    });
+  }, []);
+
+  return (
+    <StockListContainer>
+      {/* {stocks && stocks.map((stock: any) => <Stock stock={stock} />)} */}
+      {stocks ? (
+        <div>
+          {stocks.map((stock: any) => (
+            <StockCard stock={stock} key={stock.ticker} />
+          ))}
+        </div>
+      ) : (
+        <CircularProgress />
+      )}
+    </StockListContainer>
+  );
+};
+
+export default StockList;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../components/common/Header/Header";
+import Header from "../../components/common/Header/Header";
 import styled from "styled-components";
 import Calendar from "react-calendar";
 
