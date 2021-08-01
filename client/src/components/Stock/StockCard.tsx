@@ -14,7 +14,7 @@ const StockCard = (props: any) => {
         backgroundColor: "#3422d3",
         margin: "10px",
       }}
-      onClick={() => history.push(`/stocks/${ticker}`)}
+      onClick={() =>history.push(`/stocks/${ticker}`)}
     >
       <h5>{name}</h5>
       <small>{`Ticker: ${ticker}`}</small>

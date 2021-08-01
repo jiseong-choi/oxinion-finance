@@ -9,7 +9,7 @@ const StockList = () => {
 
   // Using useEffect to call the API once mounted
   useEffect(() => {
-    axios.get("https://dividenddb.herokuapp.com/stocks").then((res) => {
+    axios.get(`https://dividenddb.herokuapp.com/stocks`).then((res) => {
       const responseStocks = res.data;
       setStocks(responseStocks);
     });
@@ -17,7 +17,6 @@ const StockList = () => {
 
   return (
     <StockListContainer>
-      {/* {stocks && stocks.map((stock: any) => <Stock stock={stock} />)} */}
       {stocks ? (
         <div>
           {stocks.map((stock: any) => (
