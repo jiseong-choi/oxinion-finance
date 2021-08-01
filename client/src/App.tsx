@@ -4,7 +4,7 @@ import Home from "./views/MainPage/Home";
 import Calculator from "./views/CalculatorPage/index";
 import Screener from "./views/ScreenerPage/Screener";
 import Calendar from "./views/CalendarPage/CalendarPage";
-import StockList from "./components/StockList/StockList";
+// import StockList from "./components/StockList/StockList";
 import Stock from "./components/Stock/Stock";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/screener" component={Screener} />
           <Route path="/calculator" component={Calculator} />
           <Route path="/calendar" component={Calendar} />
-          <Route path="/stocks" children={<StockList />} />
+          {/* <Route exact path="/stocks" children={<StockList />} /> */}
           <Route path="/stocks/:ticker" children={<Stock />} />
           <Route exact path="/" component={Home} />
         </Switch>
