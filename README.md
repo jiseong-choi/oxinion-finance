@@ -28,11 +28,19 @@ AUTH, CRUD, Search, API fetch
 
 **Server:** Node, MongoDB
 
-## Roadmap
 
-- Additional browser support
 
-- Add more integrations
+## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
+
+🗓 Loadmap
+
+📑 Feature List
+
+🔨 Skill Spec
+
+📱 Prototype
+
+
 
 ## 🗂 folder directory structure
 
@@ -57,12 +65,7 @@ AUTH, CRUD, Search, API fetch
 
 ```
 
-## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
 
-🗓 Loadmap
-📑 Feature List
-🔨 Skill Spec
-📱 Prototype
 
 
 
@@ -88,7 +91,7 @@ It's all avaiable through istock-api that is used json-server.
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `api_key` | `string` | **Not Required**. Your API key |
 
 ### Get item
 
@@ -100,9 +103,6 @@ It's all avaiable through istock-api that is used json-server.
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
 
 ## Upcoming Features
 
