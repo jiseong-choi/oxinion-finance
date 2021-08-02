@@ -57,8 +57,16 @@ AUTH, CRUD, Search, API fetch
 
 ```
 
-### Records 
-https://github.com/iDevBrandon/DividendDB/wiki
+## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
+
+🗓 Loadmap
+📑 Feature List
+🔨 Skill Spec
+📱 Prototype
+
+
+
+
 
 ## 🚀 Deployment
 
