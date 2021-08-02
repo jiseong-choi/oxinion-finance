@@ -57,6 +57,9 @@ AUTH, CRUD, Search, API fetch
 
 ```
 
+### Records 
+https://github.com/iDevBrandon/DividendDB/wiki
+
 ## 🚀 Deployment
 
 To deploy this project run
