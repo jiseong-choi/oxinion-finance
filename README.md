@@ -33,11 +33,8 @@ AUTH, CRUD, Search, API fetch
 ## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
 
 🗓 Loadmap
-
 📑 Feature List
-
 🔨 Skill Spec
-
 📱 Prototype
 
 
