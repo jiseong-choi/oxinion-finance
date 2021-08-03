@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../common/Header/Header";
+import BarChart from "../Chart/BarChart";
 
 const Stock = () => {
   const { ticker }: any = useParams();
@@ -17,9 +18,16 @@ const Stock = () => {
       });
   }, [ticker]);
 
-  console.log(stockDetails);
+  // console.log(stockDetails);
 
-  const { name, ticker: stockTicker, sector }: any = stockDetails || {};
+  const {
+    name,
+    ticker: stockTicker,
+    sector,
+    divHistory,
+  }: any = stockDetails || {};
+
+  console.log(divHistory);
 
   return (
     <div>
@@ -28,6 +36,7 @@ const Stock = () => {
         <h1>{name}</h1>
         <small>{`Stock Symbol: ${stockTicker}`}</small>
         <h3> {sector} </h3>
+        <BarChart />
       </div>
     </div>
   );
