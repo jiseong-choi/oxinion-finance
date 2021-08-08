@@ -102,5 +102,5 @@ It's all avaiable through istock-api that is used json-server.
 
 
 ## Upcoming Features
-
+- Track tracsactions. Whenever the target price hits, get a notification even if i sell the stock
 - Send an email notification whenever corp announces a new dividend with Github Action?
