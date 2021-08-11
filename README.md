@@ -4,6 +4,8 @@
 
 The main object of this project is to help you maximize the dividend income with dividend stocks.
 
+If a company announces for suspension of dividend, will be removed from the database.
+
 Live Demo <https://dividenddb.vercel.app>
 
 API Demo <https://dividenddb.herokuapp.com/>
