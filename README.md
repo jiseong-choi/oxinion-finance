@@ -20,6 +20,8 @@ API Demo <https://dividenddb.herokuapp.com/>
 
 ✅ CRUD - Create(Add) stocks? | Read a list of port? | Update the amount of shares you own | Delete the stock from the list
 
+✅ RestAPI for a dataset of open dividend stocks database
+
 AUTH, CRUD, Search, API fetch
 
 ## Tech Stack
