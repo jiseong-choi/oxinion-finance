@@ -32,16 +32,12 @@ AUTH, CRUD, Search, API fetch
 
 **Server:** Node, MongoDB
 
-
-
 ## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
 
 🗓 Loadmap
 📑 Feature List
 🔨 Skill Spec
 📱 Prototype
-
-
 
 ## 🗂 folder directory structure
 
@@ -65,12 +61,6 @@ AUTH, CRUD, Search, API fetch
 
 
 ```
-
-
-
-
-
-
 
 ## 🚀 Deployment
 
@@ -112,7 +102,6 @@ It's all avaiable through istock-api that is used json-server.
 ## Reference
 
 <https://www.openbrewerydb.org/documentation/01-listbreweries>
-
 
 # DividendDB API
 
