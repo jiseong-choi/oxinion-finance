@@ -2,13 +2,17 @@
 
 ![dividenddb_logo](https://user-images.githubusercontent.com/40842018/123397214-2169c280-d5dd-11eb-9589-7ad046426c03.png)
 
-The main object of this project is to help you maximize the dividend income with dividend stocks.
+## 🎯 Purpose
+
+- A financial tool to analyze and visualize stock data.
+
+- Provide a simple, fast, and flexible way to store and query dividend dataset with API.
 
 If a company announces for suspension of dividend, will be removed from the database.
 
 Live Demo <https://dividenddb.vercel.app>
 
-API Demo <https://dividenddb.herokuapp.com/>
+API Demo <https://dividenddb.vercel.app/api/stocks>
 
 ## Features
 
@@ -103,9 +107,9 @@ It's all avaiable through istock-api that is used json-server.
 
 <https://www.openbrewerydb.org/documentation/01-listbreweries>
 
-# DividendDB API
+## API
 
-Stock-dividend-api
+DividendDB API
 
 ![dividenddb_logo](https://user-images.githubusercontent.com/40842018/123397214-2169c280-d5dd-11eb-9589-7ad046426c03.png)
 
