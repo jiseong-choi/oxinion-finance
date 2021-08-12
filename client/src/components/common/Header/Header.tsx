@@ -25,6 +25,9 @@ const Header = () => {
           <li>
             <Link to="/screener">Screener</Link>
           </li>
+          <li>
+            <Link to="/docs">Docs</Link>
+          </li>
         </NavLinks>
       </Nav>
     </HeaderGroup>
