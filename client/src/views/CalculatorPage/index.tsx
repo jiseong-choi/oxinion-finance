@@ -1,12 +1,9 @@
 import React, { useCallback, useState } from "react";
 import Header from "../../components/common/Header/Header";
-import {
-  CalculatorLayout,
-  CalculatorHeader,
-  CalculatorSummary,
-} from "./styles";
+import { CalculatorLayout, CalculatorHeader } from "./styles";
 import StockInsert from "../../components/StockInsert/StockInsert";
 import Portfolio from "../../components/Portfolio/Portfolio";
+import CalculatorSummary from "../../components/CalculatorSummary/CalculatorSummary";
 
 const Calculator = () => {
   const [dividend, setDividend] = useState();
@@ -22,21 +19,10 @@ const Calculator = () => {
           <h1>Your Amazing Portfolio</h1>
         </CalculatorHeader>
 
-        <CalculatorSummary>
-          <div>
-            <p>Portfolio Value</p>
-            <h3>${totalDividend}</h3>
-          </div>
-          <div>
-            <p>Expected Income</p>
-            <h3>${totalDividend}</h3>
-          </div>
-          <div>
-            <p>Portfolio Yield</p>
-            <h3>0.00%</h3>
-          </div>
-        </CalculatorSummary>
+        <CalculatorSummary />
+
         <StockInsert />
+
         <Portfolio />
       </CalculatorLayout>
     </div>
