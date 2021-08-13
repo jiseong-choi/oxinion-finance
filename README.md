@@ -14,6 +14,8 @@ Live Demo <https://dividenddb.vercel.app>
 
 API Demo <https://dividenddb.vercel.app/api/stocks>
 
+## 📝 [technical requirements]
+
 ## Features
 
 ✅ A calculator, Display amount of dividend depending on the shares - If you log in, you can keep tracking your own portfolio.
@@ -40,7 +42,7 @@ AUTH, CRUD, Search, API fetch
 
 🗓 Loadmap
 📑 Feature List
-🔨 Skill Spec
+🔨 [Skill Spec](https://github.com/iDevBrandon/DividendDB/wiki/Tech-Stack)
 📱 Prototype
 
 ## 🗂 folder directory structure
@@ -62,7 +64,6 @@ AUTH, CRUD, Search, API fetch
     ├── constants
     ├── queries
     └── pages
-
 
 ```
 
@@ -97,10 +98,6 @@ It's all avaiable through istock-api that is used json-server.
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
-
-## Reference
-
-<https://www.openbrewerydb.org/documentation/01-listbreweries>
 
 ## API
 
@@ -174,8 +171,9 @@ How to design API
 ## refered API link
 
 [Barchart](https://www.barchart.com/ondemand/api/getDividendData)
-[polygon](https://polygon.io/docs/get_v3_reference_tickers_anchor)
 [alphavantage](https://www.alphavantage.co/documentation/)
+[openbrewerydb](<https://www.openbrewerydb.org/documentation/01-listbreweries>)
+[polygon](https://polygon.io/docs/get_v3_reference_tickers_anchor)
 
 - <https://www.youtube.com/watch?v=1WNO9S214iw>
 - <https://github.com/TungTungCoding/daily-dividend-yield-report>
