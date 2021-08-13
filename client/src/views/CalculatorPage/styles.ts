@@ -19,9 +19,8 @@ export const CalculatorHeader = styled.div`
 
 export const CalculatorSummary = styled.div`
   display: flex;
+  margin: 1rem;
+  div {
+    padding: 1rem;
+  }
 `;
-
- 
-
-
-

@@ -31,6 +31,8 @@ const StockInsert = ({ onInsert }: any) => {
         value={value}
         onChange={onChange}
       />
+      <input type="number" placeholder="Shares" />
+      <input type="number" placeholder="avg cost" />
       <AddButton type="submit">
         <MdAdd />
       </AddButton>
