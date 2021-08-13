@@ -1,7 +1,7 @@
 import React from "react";
 import { SummaryContainer } from "./styles";
 
-const Calculator = () => {
+const Calculator = ({ totalDividend }: any) => {
   return (
     <SummaryContainer>
       <div>

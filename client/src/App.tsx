@@ -5,7 +5,7 @@ import Calculator from "./views/CalculatorPage/index";
 import Screener from "./views/ScreenerPage/Screener";
 import Calendar from "./views/CalendarPage/CalendarPage";
 // import StockList from "./components/StockList/StockList";
-import Stock from "./components/Calculator/Stock/Stock";
+import Stock from "./components/Stock/Stock";
 
 function App() {
   return (

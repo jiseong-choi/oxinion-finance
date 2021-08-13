@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef } from "react";
 import { MdAdd } from "react-icons/md";
 import {
   InsertInput,
@@ -7,24 +7,19 @@ import {
   EditHoldingsButton,
 } from "./styles";
 
-const StockInsert = ({ onInsert }: any) => {
-  const [value, setValue] = useState("");
-
-  const onChange = useCallback((e) => {
-    setValue(e.target.value);
-  }, []);
-
+const CalculatorForm = ({ stock, setStock }: any) => {
+  const symbol = useRef<HTMLInputElement>(null);
   const onSubmitHandler = useCallback((e) => {
     e.preventDefault();
+
+    if (symbol !== null) {
+      console.log(symbol.current);
+    }
   }, []);
 
   return (
     <InsertForm onSubmit={onSubmitHandler}>
-      <InsertInput
-        placeholder="Search the stock"
-        value={value}
-        onChange={onChange}
-      />
+      <InsertInput placeholder="Search the stock symbol" ref={symbol} />
       <InsertInput type="number" step="any" placeholder="Shares" min="0" />
       <InsertInput type="number" placeholder="avg cost" min="0" />
       <AddButton type="submit">
@@ -39,4 +34,4 @@ const StockInsert = ({ onInsert }: any) => {
   );
 };
 
-export default StockInsert;
+export default CalculatorForm;

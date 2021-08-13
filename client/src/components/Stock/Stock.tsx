@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Header from "../../common/Header/Header";
-import BarChart from "../../common/Chart/BarChart";
+import Header from "../common/Header/Header";
+import BarChart from "../common/Chart/BarChart";
 
 const Stock = () => {
   const { ticker }: any = useParams();
