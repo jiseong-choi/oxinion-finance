@@ -1,10 +1,10 @@
 import React from "react";
 
-const sectors = [
-  { name: "all", text: "All" },
-  { name: "sector", text: "Sector" },
-  { name: "payment", text: "Pay frequency" },
-];
+// const sectors = [
+//   { name: "all", text: "All" },
+//   { name: "sector", text: "Sector" },
+//   { name: "payment", text: "Pay frequency" },
+// ];
 
 const Categories = (props: any) => {
   return (

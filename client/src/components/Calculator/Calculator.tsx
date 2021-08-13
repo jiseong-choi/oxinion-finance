@@ -1,12 +1,12 @@
 import React from "react";
 import { SummaryContainer } from "./styles";
 
-const Calculator = ({ totalDividend }: any) => {
+const Calculator = ({ totalStock }: any) => {
   return (
     <SummaryContainer>
       <div>
         <p>Portfolio Value</p>
-        <h3>$0.00</h3>
+        <h3>${totalStock}</h3>
       </div>
       <div>
         <p>Expected Income</p>
