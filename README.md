@@ -14,6 +14,13 @@ Live Demo <https://dividenddb.vercel.app>
 
 API Demo <https://dividenddb.vercel.app/api/stocks>
 
+## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
+
+🗓 Loadmap
+📑 Feature List
+🔨 [Skill Spec](https://github.com/iDevBrandon/DividendDB/wiki/Tech-Stack)
+📱 Prototype
+
 ## 📝 [technical requirements]
 
 ## Features
@@ -37,13 +44,6 @@ AUTH, CRUD, Search, API fetch
 **Client:** React, Redux, Styled-components
 
 **Server:** Node, MongoDB
-
-## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
-
-🗓 Loadmap
-📑 Feature List
-🔨 [Skill Spec](https://github.com/iDevBrandon/DividendDB/wiki/Tech-Stack)
-📱 Prototype
 
 ## 🗂 folder directory structure
 
@@ -172,7 +172,7 @@ How to design API
 
 [Barchart](https://www.barchart.com/ondemand/api/getDividendData)
 [alphavantage](https://www.alphavantage.co/documentation/)
-[openbrewerydb](<https://www.openbrewerydb.org/documentation/01-listbreweries>)
+[openbrewerydb](https://www.openbrewerydb.org/documentation/01-listbreweries)
 [polygon](https://polygon.io/docs/get_v3_reference_tickers_anchor)
 
 - <https://www.youtube.com/watch?v=1WNO9S214iw>
