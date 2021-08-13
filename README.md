@@ -84,8 +84,8 @@ It's all avaiable through istock-api that is used json-server.
   GET /api/stocks
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Parameter | Type     | Description                    |
+| :-------- | :------- | :----------------------------- |
 | `api_key` | `string` | **Not Required**. Your API key |
 
 ### Get item
@@ -97,11 +97,6 @@ It's all avaiable through istock-api that is used json-server.
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
-
-## Upcoming Features
-
-- Track tracsactions. Whenever the target price hits, get a notification even if i sell the stock
-- Send an email notification whenever corp announces a new dividend with Github Action?
 
 ## Reference
 
@@ -117,8 +112,8 @@ US dividend stock API as i could not find out any afforable API for stock divide
 I never understood API business means before. To extends this API, i can seperate each functions as a module.
 
 fetch("https://dividenddb.herokuapp.com/stocks")
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+.then((res) => res.json())
+.then((data) => console.log(data));
 
 ## How to run your API
 
@@ -137,15 +132,6 @@ PAGINATION & LIMIT
 
 SORTING
 <https://dividenddb.herokuapp.com/stocks?_sort=id&_order=asc>
-
-## refered API link
-
-[Barchart](https://www.barchart.com/ondemand/api/getDividendData)
-[polygon](https://polygon.io/docs/get_v3_reference_tickers_anchor)
-[alphavantage](https://www.alphavantage.co/documentation/)
-
-- <https://www.youtube.com/watch?v=1WNO9S214iw>
-- <https://github.com/TungTungCoding/daily-dividend-yield-report>
 
 If you would like to connect with me, please hit the below link
 
@@ -180,5 +166,17 @@ How to design API
 
 ## Things to update
 
-add "createdAt, updatedAt" fields in MongoDB
-run API dynamically with filter stuff
+- add "createdAt, updatedAt" fields in MongoDB
+- run API dynamically with filter stuff
+- Track tracsactions. Whenever the target price hits, get a notification even if i sell the stock
+- Send an email notification whenever corp announces a new dividend with Github Action?
+
+## refered API link
+
+[Barchart](https://www.barchart.com/ondemand/api/getDividendData)
+[polygon](https://polygon.io/docs/get_v3_reference_tickers_anchor)
+[alphavantage](https://www.alphavantage.co/documentation/)
+
+- <https://www.youtube.com/watch?v=1WNO9S214iw>
+- <https://github.com/TungTungCoding/daily-dividend-yield-report>
+- <https://zuminternet.github.io/zum-front-investing-clone/?fbclid=IwAR2cUrGVZNjqnFBzZXn7bTFu7PecsC3ucG4h7lPVFrLLCCeZ0MH68xMT_wk>
