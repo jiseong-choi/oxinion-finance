@@ -159,8 +159,6 @@ How to design API
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/40842018/122681329-a7c58380-d22e-11eb-8bed-8852b617dd36.gif)
 
-- Instagram: <https://instagram.com/iDevBrandon>
-
 ## Things to update
 
 - add "createdAt, updatedAt" fields in MongoDB
@@ -178,3 +176,7 @@ How to design API
 - <https://www.youtube.com/watch?v=1WNO9S214iw>
 - <https://github.com/TungTungCoding/daily-dividend-yield-report>
 - <https://zuminternet.github.io/zum-front-investing-clone/?fbclid=IwAR2cUrGVZNjqnFBzZXn7bTFu7PecsC3ucG4h7lPVFrLLCCeZ0MH68xMT_wk>
+
+## How to reach me
+
+- Instagram: <https://instagram.com/iDevBrandon>
