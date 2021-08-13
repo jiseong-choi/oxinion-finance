@@ -103,7 +103,8 @@ It's all avaiable through istock-api that is used json-server.
 
 DividendDB API
 
-![dividenddb_logo](https://user-images.githubusercontent.com/40842018/123397214-2169c280-d5dd-11eb-9589-7ad046426c03.png)
+![oDividend](https://user-images.githubusercontent.com/40842018/129330000-b346770c-4567-4f46-9a61-87217d97c022.png)
+
 
 US dividend stock API as i could not find out any afforable API for stock dividend history. So please get involved and do PR to make a better open source API for everyone.
 I never understood API business means before. To extends this API, i can seperate each functions as a module.
