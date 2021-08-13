@@ -50,7 +50,13 @@ const CalculatorForm = ({ stock, setStock }: any) => {
         ref={share}
         min="0"
       />
-      <InsertInput type="number" placeholder="avg cost" min="0" ref={price} />
+      <InsertInput
+        type="number"
+        placeholder="avg cost"
+        step="any"
+        min="0"
+        ref={price}
+      />
       <AddButton type="submit">
         <MdAdd />
       </AddButton>
