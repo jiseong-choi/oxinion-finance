@@ -18,7 +18,7 @@ export const HeaderGroup = styled.header`
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -33,17 +33,35 @@ export const Input = styled.input`
   line-height: 33px;
   padding-left: 37px;
   border-radius: 19px;
+  display: none;
 
   &:focus {
     outline: none;
   }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: block;
+  color: black;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavLinks = styled.ul`
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-around;
   list-style: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const StyledLogo = styled.div`
@@ -51,5 +69,8 @@ export const StyledLogo = styled.div`
   height: 90%;
   img {
     height: 100%;
+    @media (min-width: 768px) {
+      /* background-image: url(../Assets/Images/dividenddb_logo.png); */
+    }
   }
 `;
