@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const InsertForm = styled.form`
   display: flex;
+  flex-direction: column;
   outline: none;
   margin: 2rem;
-  width: 90%;
   justify-content: center;
+  box-sizing: content-box;
+  border-style: solid;
+  border-image: linear-gradient(to right, #76baff, #a053df);
+  border-image-slice: 1;
+  border-radius: 10px;
 `;
 
 export const InsertInput = styled.input`

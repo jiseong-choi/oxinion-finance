@@ -14,29 +14,27 @@ const StockInsert = ({ onInsert }: any) => {
     setValue(e.target.value);
   }, []);
 
-  const onSubmit = useCallback(
-    (e) => {
-      onInsert(value);
-      setValue("");
-
-      e.preventDefault();
-    },
-    [onInsert, value]
-  );
+  const onSubmitHandler = useCallback((e) => {
+    e.preventDefault();
+  }, []);
 
   return (
-    <InsertForm onSubmit={onSubmit}>
+    <InsertForm onSubmit={onSubmitHandler}>
       <InsertInput
         placeholder="Search the stock"
         value={value}
         onChange={onChange}
       />
-      <input type="number" placeholder="Shares" />
-      <input type="number" placeholder="avg cost" />
+      <InsertInput type="number" step="any" placeholder="Shares" min="0" />
+      <InsertInput type="number" placeholder="avg cost" min="0" />
       <AddButton type="submit">
         <MdAdd />
       </AddButton>
-      <EditHoldingsButton>Edit Holdings</EditHoldingsButton>
+      {/* {dividend.length > 0 ? (
+        <EditHoldingsButton>Edit Holdings</EditHoldingsButton>
+      ) : (
+        ""
+      )} */}
     </InsertForm>
   );
 };
