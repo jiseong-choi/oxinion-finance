@@ -1,7 +1,7 @@
 import React from "react";
 import { SummaryContainer } from "./styles";
 
-const CalculatorSummary = () => {
+const Calculator = () => {
   return (
     <SummaryContainer>
       <div>
@@ -20,4 +20,4 @@ const CalculatorSummary = () => {
   );
 };
 
-export default CalculatorSummary;
+export default Calculator;

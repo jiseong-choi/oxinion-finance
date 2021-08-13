@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/common/Header/Header";
-import ScreenerMenu from "../../components/ScreenerMenu/ScreenerMenu";
-import StockList from "../../components/StockList/StockList";
+import ScreenerMenu from "../../components/Screener/Screener";
+import StockList from "../../components/Screener/ScreenerList/ScreenerList";
 import { ScrennerContainer } from "./styles";
 
 const Screener = () => {

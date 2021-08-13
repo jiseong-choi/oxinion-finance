@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { StockListContainer } from "./styles";
 import { CircularProgress } from "@material-ui/core";
-import StockCard from "../Stock/StockCard";
+import StockCard from "../../Calculator/Stock/StockCard";
 
-const StockList = () => {
+const ScreenerList = () => {
   const [stocks, setStocks] = useState([]);
 
   // Using useEffect to call the API once mounted
@@ -30,4 +30,4 @@ const StockList = () => {
   );
 };
 
-export default StockList;
+export default ScreenerList;

@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 import Header from "../../components/common/Header/Header";
 import { CalculatorLayout, CalculatorHeader } from "./styles";
-import StockInsert from "../../components/StockInsert/StockInsert";
-import Portfolio from "../../components/Portfolio/Portfolio";
-import CalculatorSummary from "../../components/CalculatorSummary/CalculatorSummary";
+import StockInsert from "../../components/Calculator/StockInsert/StockInsert";
+import Portfolio from "../../components/Calculator/StockList/Portfolio";
+import CalculatorSummary from "../../components/Calculator/Calculator";
 
 const Calculator = () => {
   const [dividend, setDividend] = useState();

@@ -1,7 +1,7 @@
 import React from "react";
 import ScreenMenuItem from "./ScreenerMenuItem/ScreenerMenuItem";
 
-const ScreenerMenu = () => {
+const Screener = () => {
   return (
     <div>
       <ScreenMenuItem />
@@ -9,4 +9,4 @@ const ScreenerMenu = () => {
   );
 };
 
-export default ScreenerMenu;
+export default Screener;
