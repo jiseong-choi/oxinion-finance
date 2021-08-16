@@ -1,4 +1,4 @@
-# DividendDB
+# UpDividend
 
 ![dividenddb_logo](https://user-images.githubusercontent.com/40842018/123397214-2169c280-d5dd-11eb-9589-7ad046426c03.png)
 
@@ -10,15 +10,15 @@
 
 If a company announces for suspension of dividend, will be removed from the database.
 
-Live Demo <https://dividenddb.vercel.app>
+Live Demo <https://UpDividend.vercel.app>
 
-API Demo <https://dividenddb.vercel.app/api/stocks>
+API Demo <https://UpDividend.vercel.app/api/stocks>
 
-## 💁🏻 [Wiki](https://github.com/iDevBrandon/DividendDB/wiki)
+## 💁🏻 [Wiki](https://github.com/iDevBrandon/UpDividend/wiki)
 
 🗓 Loadmap
 📑 Feature List
-🔨 [Skill Spec](https://github.com/iDevBrandon/DividendDB/wiki/Tech-Stack)
+🔨 [Skill Spec](https://github.com/iDevBrandon/UpDividend/wiki/Tech-Stack)
 📱 Prototype
 
 ## 📝 [technical requirements]
