@@ -9,8 +9,7 @@ import {
   MobileMenu,
 } from "./styles";
 import { FaTimes, FaBars } from "react-icons/fa";
-
-import logo from "../../../Assets/Images/dividenddb_small_logo.png";
+import mobileLogo from "../../../Assets/Images/updividend_logo.png";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -19,7 +18,7 @@ const Header = () => {
     <HeaderGroup>
       <StyledLogo>
         <Link to="/">
-          <img src={logo} alt="Dividend Kings" />
+          <img src={mobileLogo} alt="UpDividend" />
         </Link>
       </StyledLogo>
 
