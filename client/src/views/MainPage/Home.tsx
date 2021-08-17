@@ -42,7 +42,7 @@ const Home = () => {
               dividend income
             </h1>
             <p>
-              DividendDB is a tool to track Everything You Need to Know About
+              UpDividend is a tool to track Everything You Need to Know About
               <span>Dividends</span>.Sign up and get started today.
             </p>
           </Title>
