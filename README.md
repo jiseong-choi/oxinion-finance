@@ -74,14 +74,14 @@ To deploy this project run
   npm run deploy
 ```
 
-## API Reference
+## API specification(UpDividend API)
 
-It's all avaiable through istock-api that is used json-server.
+It's all avaiable through UpDividend-api
 
 ### Get all items
 
 ```http
-  GET /api/stocks
+  GET https://api.updividend.com/stocks/
 ```
 
 | Parameter | Type     | Description                    |
@@ -91,16 +91,15 @@ It's all avaiable through istock-api that is used json-server.
 ### Get item
 
 ```http
-  GET /api/stocks/${id}
+  GET /api/stocks/${symbol}
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-## API
+## All
 
-DividendDB API
 
 ![oDividend](https://user-images.githubusercontent.com/40842018/129330000-b346770c-4567-4f46-9a61-87217d97c022.png)
 
