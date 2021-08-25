@@ -163,7 +163,7 @@ How to design API
 - run API dynamically with filter stuff
 - Track tracsactions. Whenever the target price hits, get a notification even if i sell the stock
 - Send an email notification whenever corp announces a new dividend with Github Action?
-- StockAI, i refer 4-5 websites to trade. Give strong buy, buy, hold, sell and Strong sell indicator 
+- StockAI, i refer 4-5 websites to trade. Give strong buy, buy, hold, sell and Strong sell indicator like Fear & Greed index
 
 ## refered API link
 
