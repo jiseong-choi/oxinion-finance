@@ -28,7 +28,7 @@ const Calculator = () => {
         <CalculatorSummary totalStock={totalStock} />
         <CalculatorForm stock={stock} setStock={setStock} />
 
-        <Portfolio stock={stock} setStock={setStock} />
+        <Portfolio />
       </CalculatorLayout>
     </div>
   );
