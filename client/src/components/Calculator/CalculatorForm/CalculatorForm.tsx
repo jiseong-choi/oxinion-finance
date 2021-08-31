@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { MdAdd } from "react-icons/md";
 import {
   InsertInput,
@@ -7,7 +7,15 @@ import {
   // EditHoldingsButton,
 } from "./styles";
 
+
+
 const CalculatorForm = ({ stock, setStock }: any) => {
+  const [stockData, setStockData] = useState({
+    symbol: "",
+    shares: 0,
+    price: 0,
+  });
+
   const symbol = useRef<HTMLInputElement>(null);
   const share = useRef<HTMLInputElement>(null);
   const price = useRef<HTMLInputElement>(null);
@@ -15,40 +23,33 @@ const CalculatorForm = ({ stock, setStock }: any) => {
   const onSubmitHandler = (e: any) => {
     e.preventDefault();
 
-    // setStock([
-    //   ...stock,
-    //   {
-    //     symbol: symbol.current?.value,
-    //     share: share.current?.value,
-    //     price: price.current?.value,
-    //   },
-    // ]);
+    const fieldName = e.target.getAttribute("name");
+    const fieldValue = e.target.value;
 
-    setStock([
-      ...stock,
-      {
-        symbol: symbol.current?.value,
-        share: share.current?.value,
-        price: price.current?.value,
-      },
-    ]);
+    const newStockData = {
+      ...stockData,
+    };
+    //newStockData[fieldName] = fieldValue;
 
-    if (symbol.current && share.current && price.current) {
-      symbol.current.value = "";
-      share.current.value = "";
-      price.current.value = "";
-    }
+    setStockData(newStockData);
   };
 
   return (
     <InsertForm onSubmit={onSubmitHandler}>
-      <InsertInput placeholder="Search the stock symbol" ref={symbol} />
+      <InsertInput
+        placeholder="Search the stock symbol"
+        ref={symbol}
+        name="symbol"
+        required
+      />
       <InsertInput
         type="number"
         step="any"
         placeholder="Shares"
         ref={share}
+        name="shares"
         min="0"
+        required
       />
       <InsertInput
         type="number"
@@ -56,6 +57,8 @@ const CalculatorForm = ({ stock, setStock }: any) => {
         step="any"
         min="0"
         ref={price}
+        name="price"
+        required
       />
       <AddButton type="submit">
         <MdAdd />
