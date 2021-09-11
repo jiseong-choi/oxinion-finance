@@ -1,4 +1,4 @@
-# UpDividend BE
+# OXINION Finance BE
 
 Folder structure for API
 <https://www.youtube.com/watch?v=oNlMrpnUSFE>

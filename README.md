@@ -9,9 +9,9 @@
 
 If a company announces for suspension of dividend, will be removed from the database.
 
-Live Demo <https://UpDividend.vercel.app>
+Live Demo <https://finance.oxinion.com>
 
-API Demo <https://UpDividend.vercel.app/api/stocks>
+API Demo <https://finance.oxinion.com/api/stocks>
 
 ## 💁🏻 [Wiki](https://github.com/iDevBrandon/UpDividend/wiki)
 
