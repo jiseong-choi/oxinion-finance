@@ -164,7 +164,7 @@ How to design API
 - Track tracsactions. Whenever the target price hits, get a notification even if i sell the stock
 - Send an email notification whenever corp announces a new dividend with Github Action?
 - StockAI, i refer 4-5 websites to trade. Give strong buy, buy, hold, sell and Strong sell indicator like Fear & Greed index
-- In the future, user earn point on oxinion.com and use that point to buy fraction shares like i do earn cash from nbt & invest in HK app 
+- In the future, user earn point on oxinion.com and use that point to buy fractional* shares like decimal investment. i do earn cash from nbt & invest in HK app 
 
 ## refered API link
 
