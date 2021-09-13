@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../../components/common/Header/Header";
 import { Button } from "../../components/common/Button";
 import HomeImg from "../../Assets/Images/smartphone.png";
+import MobilePreview from "../../Assets/Images/mobile_preview.png";
 import DataExample from "../../components/DataExample";
 
 const HomeContent = styled.div`
@@ -51,6 +52,10 @@ const Home = () => {
         <ImgExpression> </ImgExpression>
         <DataExample />
       </HomeContent>
+      <div>
+        <h1>Buy fractions of stocks at a $1 minimum.</h1>
+        <img src={MobilePreview} alt="Mobile Preview" />
+      </div>
     </div>
   );
 };
