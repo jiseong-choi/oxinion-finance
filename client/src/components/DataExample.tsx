@@ -24,7 +24,7 @@ const DataExample = () => {
 
   return (
     <div>
-      <h1>Request all stock data through OXINION Finance API</h1>
+      <h2>Request all stock data through OXINION Finance API</h2>
       <TextArea
         rows={7}
         readOnly={true}

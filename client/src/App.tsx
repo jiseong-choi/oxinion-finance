@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./views/MainPage/Home";
-import Calculator from "./views/CalculatorPage/index";
-import Screener from "./views/ScreenerPage/Screener";
-import Calendar from "./views/CalendarPage/CalendarPage";
+import Home from "./pages/MainPage/Home";
+import Calculator from "./pages/CalculatorPage/index";
+import Screener from "./pages/ScreenerPage/Screener";
+import Calendar from "./pages/CalendarPage/CalendarPage";
 // import StockList from "./components/StockList/StockList";
 import Stock from "./components/Stock/Stock";
 
