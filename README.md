@@ -1,5 +1,5 @@
+![Finance-removebg-preview](https://user-images.githubusercontent.com/40842018/133953929-fd422e92-2046-4a0f-a75f-bbbbdd1b9ffb.png)
 
-![0cfa28f7818e4cdc899aa77703e15b8c](https://user-images.githubusercontent.com/40842018/129534464-b053a987-85f8-4e35-8649-6e9a5823684e.png)
 
 # 🎯 Purpose
 
