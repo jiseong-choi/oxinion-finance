@@ -1,4 +1,4 @@
-![Finance-removebg-preview](https://user-images.githubusercontent.com/40842018/133953929-fd422e92-2046-4a0f-a75f-bbbbdd1b9ffb.png)
+<img width="493" alt="Screen Shot 2021-09-20 at 12 17 35 PM" src="https://user-images.githubusercontent.com/40842018/133954003-7fb87bfd-e9e5-4968-9be9-9f2e5d9c5b4e.png">
 
 
 # 🎯 Purpose
