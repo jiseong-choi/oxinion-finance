@@ -1,6 +1,6 @@
 const express = require("express");
-
 const app = express();
+require("dotenv").config();
 
 //Middlewares
 // app.use("/api/stocks", () => {
@@ -8,12 +8,18 @@ const app = express();
 // });
 
 // ROUTES
+app.get("/", (req, res) => {
+  res.send("Feel like a home");
+});
+
 app.get("/api", (req, res) => {
-  res.send("We are api home");
+  res.send("OXINION Finance API doc page");
 });
 
 app.get("/api/stocks", (req, res) => {
   res.send("We are on stock api page");
 });
 
-app.listen(3000);
+app.listen(process.env.PORT, () => {
+  console.log("Server is running on port: " + process.env.PORT);
+});
