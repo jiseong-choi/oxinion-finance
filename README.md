@@ -1,4 +1,5 @@
-<img width="493" alt="Screen Shot 2021-09-20 at 12 17 35 PM" src="https://user-images.githubusercontent.com/40842018/133954003-7fb87bfd-e9e5-4968-9be9-9f2e5d9c5b4e.png">
+
+<img width="417" alt="Screen Shot 2021-09-20 at 12 19 12 PM" src="https://user-images.githubusercontent.com/40842018/133954051-5d15091f-4d92-438b-810b-b09a1685164d.png">
 
 
 # 🎯 Purpose
