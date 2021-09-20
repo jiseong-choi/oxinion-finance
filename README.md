@@ -1,8 +1,6 @@
-
 <img width="417" alt="Screen Shot 2021-09-20 at 12 19 12 PM" src="https://user-images.githubusercontent.com/40842018/133954051-5d15091f-4d92-438b-810b-b09a1685164d.png">
 
-
-# 🎯 Purpose
+# 🎯 OXINION Finance API
 
 - A financial tool to analyze and visualize stock data.
 
@@ -101,7 +99,6 @@ It's all avaiable through UpDividend-api
 
 ## All
 
-
 ![oDividend](https://user-images.githubusercontent.com/40842018/129330000-b346770c-4567-4f46-9a61-87217d97c022.png)
 
 US dividend stock API as i could not find out any afforable API for stock dividend history. So please get involved and do PR to make a better open source API for everyone.
@@ -165,7 +162,7 @@ How to design API
 - Track tracsactions. Whenever the target price hits, get a notification even if i sell the stock
 - Send an email notification whenever corp announces a new dividend with Github Action?
 - StockAI, i refer 4-5 websites to trade. Give strong buy, buy, hold, sell and Strong sell indicator like Fear & Greed index
-- In the future, user earn point on oxinion.com and use that point to buy fractional* shares like decimal investment. i do earn cash from nbt & invest in HK app 
+- In the future, user earn point on oxinion.com and use that point to buy fractional\* shares like decimal investment. i do earn cash from nbt & invest in HK app
 
 ## refered API link
 
