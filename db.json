@@ -1,0 +1,164 @@
+{
+  "stocks": [
+    {
+      "id": 1,
+      "paymentMonth": [
+        { "$numberInt": "1" },
+        { "$numberInt": "4" },
+        { "$numberInt": "7" },
+        { "$numberInt": "10" }
+      ],
+      "sector": "Financials",
+      "website": "https://www.nasdaq.com/market-activity/stocks/jpm/dividend-history",
+      "name": "JP Morgan Chase & Co.",
+      "ticker": "jpm",
+      "divHistory": [
+        {
+          "_id": { "$oid": "6101fb879fcbcd252f133a18" },
+          "exDate": { "$date": { "$numberLong": "1625184000000" } },
+          "paymentDate": { "$date": { "$numberLong": "1627689600000" } },
+          "cashAmount": { "$numberDouble": "0.9" }
+        },
+        {
+          "_id": { "$oid": "6101fb879fcbcd252f133a19" },
+          "exDate": { "$date": { "$numberLong": "1617580800000" } },
+          "paymentDate": { "$date": { "$numberLong": "1619740800000" } },
+          "cashAmount": { "$numberDouble": "0.9" }
+        },
+        {
+          "_id": { "$oid": "6101fb879fcbcd252f133a1a" },
+          "exDate": { "$date": { "$numberLong": "1609804800000" } },
+          "paymentDate": { "$date": { "$numberLong": "1612051200000" } },
+          "cashAmount": { "$numberDouble": "0.9" }
+        },
+        {
+          "_id": { "$oid": "6101fb879fcbcd252f133a1b" },
+          "exDate": { "$date": { "$numberLong": "1601856000000" } },
+          "paymentDate": { "$date": { "$numberLong": "1604102400000" } },
+          "cashAmount": { "$numberDouble": "0.9" }
+        }
+      ],
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "id": 2,
+      "paymentMonth": [
+        { "$numberInt": "1" },
+        { "$numberInt": "4" },
+        { "$numberInt": "6" },
+        { "$numberInt": "9" }
+      ],
+      "sector": "Consumer Staples",
+      "website": "https://www.nasdaq.com/market-activity/stocks/wmt/dividend-history",
+      "name": "Walmart, Inc.",
+      "ticker": "wmt",
+      "divHistory": [
+        {
+          "_id": { "$oid": "61018e9a06802d192142799b" },
+          "exDate": { "$date": { "$numberLong": "1620259200000" } },
+          "paymentDate": { "$date": { "$numberLong": "1622505600000" } },
+          "cashAmount": { "$numberDouble": "0.55" }
+        },
+        {
+          "_id": { "$oid": "61018e9a06802d192142799c" },
+          "exDate": { "$date": { "$numberLong": "1616025600000" } },
+          "paymentDate": { "$date": { "$numberLong": "1617580800000" } },
+          "cashAmount": { "$numberDouble": "0.55" }
+        },
+        {
+          "_id": { "$oid": "61018e9a06802d192142799d" },
+          "exDate": { "$date": { "$numberLong": "1607558400000" } },
+          "paymentDate": { "$date": { "$numberLong": "1609718400000" } },
+          "cashAmount": { "$numberDouble": "0.54" }
+        },
+        {
+          "_id": { "$oid": "61018e9a06802d192142799e" },
+          "exDate": { "$date": { "$numberLong": "1597276800000" } },
+          "paymentDate": { "$date": { "$numberLong": "1599523200000" } },
+          "cashAmount": { "$numberDouble": "0.54" }
+        }
+      ],
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "id": 3,
+      "paymentMonth": [
+        { "$numberInt": "3" },
+        { "$numberInt": "6" },
+        { "$numberInt": "9" },
+        { "$numberInt": "12" }
+      ],
+      "sector": "Technology",
+      "website": "https://www.nasdaq.com/market-activity/stocks/msft/dividend-history",
+      "name": "Microsoft Corporation",
+      "ticker": "msft",
+      "divHistory": [
+        {
+          "_id": { "$oid": "6101a2e45db3e31f1832e342" },
+          "exDate": { "$date": { "$numberLong": "1629244800000" } },
+          "paymentDate": { "$date": { "$numberLong": "1631145600000" } },
+          "cashAmount": { "$numberDouble": "0.56" }
+        },
+        {
+          "_id": { "$oid": "6101a2e45db3e31f1832e343" },
+          "exDate": { "$date": { "$numberLong": "1621382400000" } },
+          "paymentDate": { "$date": { "$numberLong": "1623283200000" } },
+          "cashAmount": { "$numberDouble": "0.56" }
+        },
+        {
+          "_id": { "$oid": "6101a2e45db3e31f1832e344" },
+          "exDate": { "$date": { "$numberLong": "1613520000000" } },
+          "paymentDate": { "$date": { "$numberLong": "1615420800000" } },
+          "cashAmount": { "$numberDouble": "0.56" }
+        },
+        {
+          "_id": { "$oid": "6101a2e45db3e31f1832e345" },
+          "exDate": { "$date": { "$numberLong": "1605657600000" } },
+          "paymentDate": { "$date": { "$numberLong": "1607558400000" } },
+          "cashAmount": { "$numberDouble": "0.56" }
+        }
+      ],
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "id": 4,
+      "paymentMonth": [
+        { "$numberInt": "1" },
+        { "$numberInt": "4" },
+        { "$numberInt": "7" },
+        { "$numberInt": "10" }
+      ],
+      "sector": "Consumer Discretionary",
+      "website": "https://www.nasdaq.com/market-activity/stocks/nke/dividend-history",
+      "name": "Nike, Inc.",
+      "ticker": "nke",
+      "divHistory": [
+        {
+          "_id": { "$oid": "6101fc7b9fcbcd252f133a1e" },
+          "exDate": { "$date": { "$numberLong": "1622160000000" } },
+          "paymentDate": { "$date": { "$numberLong": "1625097600000" } },
+          "cashAmount": { "$numberDouble": "0.275" }
+        },
+        {
+          "_id": { "$oid": "6101fc7b9fcbcd252f133a1f" },
+          "exDate": { "$date": { "$numberLong": "1614297600000" } },
+          "paymentDate": { "$date": { "$numberLong": "1617235200000" } },
+          "cashAmount": { "$numberDouble": "0.275" }
+        },
+        {
+          "_id": { "$oid": "6101fc7b9fcbcd252f133a20" },
+          "exDate": { "$date": { "$numberLong": "1607040000000" } },
+          "paymentDate": { "$date": { "$numberLong": "1609200000000" } },
+          "cashAmount": { "$numberDouble": "0.275" }
+        },
+        {
+          "_id": { "$oid": "6101fc7b9fcbcd252f133a21" },
+          "exDate": { "$date": { "$numberLong": "1598572800000" } },
+          "paymentDate": { "$date": { "$numberLong": "1601510400000" } },
+          "cashAmount": { "$numberDouble": "0.245" }
+        }
+      ],
+      "__v": { "$numberInt": "0" }
+    }
+  ]
+}
