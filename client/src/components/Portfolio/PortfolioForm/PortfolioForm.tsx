@@ -27,7 +27,7 @@ const CalculatorForm = ({ stock, setStock }: any) => {
       share: shares,
       cost: avgCost,
     };
-    axios.post("https://api.finance.oxinion.com/create", data).then((res) => {
+    axios.post("http://localhost:5000/create", data).then((res) => {
       window.location.reload();
     });
   };
