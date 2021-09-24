@@ -76,10 +76,13 @@ To deploy this project run
 ```
 
 add your own MongoDB credentials
+heroku git:remote -a oxinionfinance
+
+git subtree push --prefix oxinionfinance heroku main
 
 ## API specification(OXINION Finance API)
 
-It's all avaiable through UpDividend-api
+It's all avaiable through OXINION Finance API
 
 ### Get all items
 
