@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StockContainer } from "./styles";
+import { StockCell, StockContainer, StockControl } from "./styles";
 import axios from "axios";
 import { InsertInput } from "../../PortfolioForm/styles";
 
@@ -39,14 +39,14 @@ const PortfolioItem = ({
 
   return (
     <StockContainer>
-      <div>
+      <StockCell>
         {update ? (
           <p onChange={() => setTickerSymbol(tickerSymbol)}>{tickerSymbol}</p>
         ) : (
           tickerSymbol
         )}
-      </div>
-      <p>
+      </StockCell>
+      <StockCell>
         {update ? (
           <InsertInput
             type="number"
@@ -61,7 +61,7 @@ const PortfolioItem = ({
         ) : (
           shares
         )}
-      </p>
+      </StockCell>
       <p>
         {update ? (
           <InsertInput
@@ -79,11 +79,11 @@ const PortfolioItem = ({
         )}
       </p>
       {update ? (
-        <button onClick={() => updateData()}>Update</button>
+        <StockControl onClick={() => updateData()}>Update</StockControl>
       ) : (
-        <button onClick={() => setUpdate(true)}>Edit</button>
+        <StockControl onClick={() => setUpdate(true)}>Edit</StockControl>
       )}
-      <button onClick={() => deleteData()}>Delete</button>
+      <StockControl onClick={() => deleteData()}>Delete</StockControl>
     </StockContainer>
   );
 };

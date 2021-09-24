@@ -10,7 +10,7 @@ export const StockItem = styled.div`
   transition: 0.4s;
   width: max-content;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 
 export const PortfolioTable = styled.table`
