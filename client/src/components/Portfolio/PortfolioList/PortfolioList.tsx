@@ -8,7 +8,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/get")
+      .get("https://api.finance.oxinion.com/get")
       .then((res: any) => setData(res.data));
   }, []);
 

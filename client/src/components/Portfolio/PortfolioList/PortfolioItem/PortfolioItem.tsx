@@ -26,14 +26,14 @@ const PortfolioItem = ({
       cost: avgCost,
       _id: id,
     };
-    axios.post("http://localhost:5000/update", data).then((res) => {
+    axios.post("https://api.finance.oxinion.com/update", data).then((res) => {
       window.location.reload();
     });
   };
 
   const deleteData = () => {
     axios
-      .post("http://localhost:5000/delete", { _id: id })
+      .post("https://api.finance.oxinion.com/delete", { _id: id })
       .then((res) => window.location.reload());
   };
 
