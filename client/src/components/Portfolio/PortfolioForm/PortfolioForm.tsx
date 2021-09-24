@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { MdAdd } from "react-icons/md";
 import {
   InsertInput,
@@ -7,61 +8,63 @@ import {
   // EditHoldingsButton,
 } from "./styles";
 
-
-
 const CalculatorForm = ({ stock, setStock }: any) => {
-  const [stockData, setStockData] = useState({
-    symbol: "",
-    shares: 0,
-    price: 0,
-  });
+  const [tickerSymbol, setTickerSymbol] = useState("");
+  const [shares, setShares] = useState("");
+  const [avgCost, setAvgCost] = useState("");
 
-  const symbol = useRef<HTMLInputElement>(null);
-  const share = useRef<HTMLInputElement>(null);
-  const price = useRef<HTMLInputElement>(null);
+  // const ticker = useRef<HTMLInputElement>(null);
+  // const share = useRef<HTMLInputElement>(null);
+  // const cost = useRef<HTMLInputElement>(null);
 
-  const onSubmitHandler = (e: any) => {
-    e.preventDefault();
+  // const onSubmitHandler = (e: any) => {
+  //   e.preventDefault();
+  // };
 
-    const fieldName = e.target.getAttribute("name");
-    const fieldValue = e.target.value;
-
-    const newStockData = {
-      ...stockData,
+  const postData = () => {
+    const data = {
+      ticker: tickerSymbol,
+      share: shares,
+      cost: avgCost,
     };
-    //newStockData[fieldName] = fieldValue;
+    axios.post("http://localhost:5000/create", data).then((res) => {
+      window.location.reload();
+    });
 
-    setStockData(newStockData);
+    console.log(data);
   };
 
   return (
-    <InsertForm onSubmit={onSubmitHandler}>
+    <InsertForm>
       <InsertInput
         placeholder="Search the stock symbol"
-        ref={symbol}
-        name="symbol"
+        name="ticker"
         required
+        value={tickerSymbol}
+        onChange={(e) => setTickerSymbol(e.target.value)}
       />
       <InsertInput
         type="number"
         step="any"
         placeholder="Shares"
-        ref={share}
-        name="shares"
+        name="share"
         min="0"
         required
+        value={shares}
+        onChange={(e) => setShares(e.target.value)}
       />
       <InsertInput
         type="number"
         placeholder="avg cost"
         step="any"
         min="0"
-        ref={price}
-        name="price"
+        name="cost"
         required
+        value={avgCost}
+        onChange={(e) => setAvgCost(e.target.value)}
       />
-      <AddButton type="submit">
-        <MdAdd />
+      <AddButton type="submit" onClick={() => postData()}>
+        <MdAdd /> Add to Portfolio
       </AddButton>
       {/* {dividend.length > 0 ? (
         <EditHoldingsButton>Edit Holdings</EditHoldingsButton>

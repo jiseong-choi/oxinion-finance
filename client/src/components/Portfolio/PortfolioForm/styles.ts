@@ -29,6 +29,9 @@ export const AddButton = styled.button`
   padding-right: 1rem;
   font-size: 1rem;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background: #0f55de;
