@@ -1,26 +1,29 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
+import { PortfolioHead } from "./styles";
 
 const Portfolio = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/get").then((res) => setData(res.data));
+    axios
+      .get("http://localhost:5000/get")
+      .then((res: any) => setData(res.data));
   }, []);
 
   return (
     <div>
-      <div style={{ display: "flex" }}>
+      <PortfolioHead>
         <p>Ticker</p>
         <p>Shares</p>
         <p>Avg Cost</p>
-      </div>
+      </PortfolioHead>
       {data.map((stock: any) => (
         <PortfolioItem
           ticker={stock.ticker}
-          key={stock.id}
-          id={stock.id}
+          id={stock._id}
+          key={stock._id}
           share={stock.share}
           cost={stock.cost}
         />

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StockItem = styled.div`
   display: flex;
   box-shadow: 0 1px 0 0 #e3edee !important;
-
   padding: 10px 15px;
   background-color: #fff;
   border-radius: 8px;
@@ -19,14 +18,10 @@ export const PortfolioTable = styled.table`
   width: 100%;
 `;
 
-export const TableHead = styled.th`
+export const PortfolioHead = styled.div`
   background-color: rgb(117, 201, 250);
   padding: 0.5rem;
-`;
-
-export const TableData = styled.td`
-  background-color: rgb(205, 235, 253);
-  text-align: center;
+  display: flex;
 `;
 
 // TableHead,
