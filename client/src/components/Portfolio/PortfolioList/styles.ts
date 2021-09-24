@@ -24,10 +24,9 @@ export const PortfolioHead = styled.div`
   display: flex;
 `;
 
-// TableHead,
-// TableData {
-//   border: 1px solid #ffffff;
-//   text-align: left;
-//   padding: 8px;
-//   font-size: 32px;
-// }
+export const ListContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+`;

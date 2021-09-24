@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
-import { PortfolioHead } from "./styles";
+import { ListContainer, PortfolioHead } from "./styles";
 
 const Portfolio = () => {
   const [data, setData] = useState([]);
@@ -13,7 +13,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div>
+    <ListContainer>
       <PortfolioHead>
         <p>Ticker</p>
         <p>Shares</p>
@@ -28,7 +28,7 @@ const Portfolio = () => {
           cost={stock.cost}
         />
       ))}
-    </div>
+    </ListContainer>
   );
 };
 

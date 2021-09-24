@@ -30,8 +30,6 @@ const CalculatorForm = ({ stock, setStock }: any) => {
     axios.post("http://localhost:5000/create", data).then((res) => {
       window.location.reload();
     });
-
-    console.log(data);
   };
 
   return (

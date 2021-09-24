@@ -8,7 +8,9 @@ export const PortfolioLayout = styled.div`
   margin-top: 5rem;
 `;
 
-
+export const PortfolioList = styled.div`
+background-color: green;
+`;
 
 export const PortfolioSummary = styled.div`
   display: flex;
