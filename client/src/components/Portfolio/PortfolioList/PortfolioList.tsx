@@ -11,11 +11,11 @@ const Portfolio = () => {
 
   return (
     <div>
-      <tr>
-        <th>Ticker</th>
-        <th>Shares</th>
-        <th>Avg Cost</th>
-      </tr>
+      <div style={{ display: "flex" }}>
+        <p>Ticker</p>
+        <p>Shares</p>
+        <p>Avg Cost</p>
+      </div>
       {data.map((stock: any) => (
         <PortfolioItem
           ticker={stock.ticker}

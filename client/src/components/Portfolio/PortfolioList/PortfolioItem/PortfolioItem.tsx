@@ -16,8 +16,9 @@ const PortfolioItem = ({
   const [tickerSymbol, setTickerSymbol] = useState(ticker);
   const [shares, setShares] = useState(share);
   const [avgCost, setAvgCost] = useState(cost);
+
   return (
-    <StockContainer>
+    <StockContainer style={{ display: "flex" }}>
       <p>{tickerSymbol}</p>
       <p>{shares}</p>
       <p> {avgCost}</p>
