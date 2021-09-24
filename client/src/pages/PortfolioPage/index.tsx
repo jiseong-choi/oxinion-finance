@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../components/common/Header/Header";
-import { CalculatorLayout, CalculatorHeader } from "./styles";
-import CalculatorForm from "../../components/Calculator/CalculatorForm/CalculatorForm";
-import Portfolio from "../../components/Calculator/Portfolio/Portfolio";
-import CalculatorSummary from "../../components/Calculator/Calculator";
+import { PortfolioLayout, PortfolioHeader } from "./styles";
+import PortfolioForm from "../../components/Portfolio/PortfolioForm/PortfolioForm";
+import Portfolio from "../../components/Portfolio/Portfolio/Portfolio";
+import CalculatorSummary from "../../components/Portfolio/Calculator";
 
 const Calculator = () => {
   const [stock, setStock] = useState<any[]>([]);
@@ -20,16 +20,16 @@ const Calculator = () => {
   return (
     <div>
       <Header />
-      <CalculatorLayout>
+      <PortfolioLayout>
         <h1>Dividend calculator</h1>
-        <CalculatorHeader>
+        <PortfolioHeader>
           <h1>Your Amazing Portfolio</h1>
-        </CalculatorHeader>
+        </PortfolioHeader>
         <CalculatorSummary totalStock={totalStock} />
-        <CalculatorForm stock={stock} setStock={setStock} />
+        <PortfolioForm stock={stock} setStock={setStock} />
 
         <Portfolio />
-      </CalculatorLayout>
+      </PortfolioLayout>
     </div>
   );
 };

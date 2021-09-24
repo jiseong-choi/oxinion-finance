@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/MainPage/Home";
-import Calculator from "./pages/CalculatorPage/index";
+import Portfolio from "./pages/PortfolioPage/index";
 import Screener from "./pages/ScreenerPage/Screener";
 import Calendar from "./pages/CalendarPage/CalendarPage";
 import Docs from "./pages/DocPage/index";
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/screener" component={Screener} />
-          <Route path="/calculator" component={Calculator} />
+          <Route path="/portfolio" component={Portfolio} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/docs" component={Docs} />
           {/* <Route exact path="/stocks" children={<StockList />} /> */}

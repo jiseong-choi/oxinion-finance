@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CalculatorLayout = styled.div`
+export const PortfolioLayout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@ export const CalculatorLayout = styled.div`
   margin-top: 5rem;
 `;
 
-export const CalculatorHeader = styled.div`
+export const PortfolioHeader = styled.div`
   background-color: #03218d;
   color: white;
   width: 100%;
@@ -17,7 +17,7 @@ export const CalculatorHeader = styled.div`
   text-align: center;
 `;
 
-export const CalculatorSummary = styled.div`
+export const PortfolioSummary = styled.div`
   display: flex;
   margin: 1rem;
   div {
