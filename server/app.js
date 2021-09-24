@@ -1,25 +1,31 @@
 const express = require("express");
 const app = express();
-require("dotenv").config();
+const PORT = process.env.PORT || 5000;
+const dotenv = require("dotenv").config();
+const mongoose = require("mongoose");
+const Portfolio = require("./models/Portfolio");
+const cors = require("cors");
 
-//Middlewares
-// app.use("/api/stocks", () => {
-//   console.log("middleware running");
-// });
+app.use(express.json());
+app.use(cors());
 
-// ROUTES
-app.get("/", (req, res) => {
-  res.send("Feel like a home");
-});
+// DB URI
+// replace process.env.MONGODB_URI to yours
+const MONGODB_URI = process.env.MONGODB_URI;
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () =>
+  console.log(`Connected to MongoDB`)
+);
 
-app.get("/api", (req, res) => {
-  res.send("OXINION Finance API doc page");
-});
+// routes
+const create = require("./routes/create");
+const get = require("./routes/get");
+const update = require("./routes/update");
+const deletes = require("./routes/delete");
 
-app.get("/api/stocks", (req, res) => {
-  res.send("We are on stock api page");
-});
+// API Routes
+app.use("/create", create);
+app.use("/get", get);
+app.use("/update", update);
+app.use("/delete", deletes);
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log("Server is running on port: " + process.env.PORT);
-});
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));

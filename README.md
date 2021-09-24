@@ -1,6 +1,8 @@
+# 📈 OXINION Finance
+
 <img width="417" alt="Screen Shot 2021-09-20 at 12 19 12 PM" src="https://user-images.githubusercontent.com/40842018/133954051-5d15091f-4d92-438b-810b-b09a1685164d.png">
 
-# 🎯 Purpose
+## 🎯 Financial Data
 
 - A financial tool to analyze and visualize stock data.
 
@@ -73,7 +75,9 @@ To deploy this project run
   npm run deploy
 ```
 
-## API specification(UpDividend API)
+add your own MongoDB credentials
+
+## API specification(OXINION Finance API)
 
 It's all avaiable through UpDividend-api
 
