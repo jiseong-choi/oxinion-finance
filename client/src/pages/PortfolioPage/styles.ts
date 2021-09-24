@@ -8,14 +8,7 @@ export const PortfolioLayout = styled.div`
   margin-top: 5rem;
 `;
 
-export const PortfolioHeader = styled.div`
-  background-color: #03218d;
-  color: white;
-  width: 100%;
-  padding: 30px;
-  font-size: 1.5rem;
-  text-align: center;
-`;
+
 
 export const PortfolioSummary = styled.div`
   display: flex;

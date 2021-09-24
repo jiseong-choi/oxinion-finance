@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../components/common/Header/Header";
-import { PortfolioLayout, PortfolioHeader } from "./styles";
+import { PortfolioLayout } from "./styles";
 import PortfolioForm from "../../components/Portfolio/PortfolioForm/PortfolioForm";
-import Portfolio from "../../components/Portfolio/Portfolio/Portfolio";
-import CalculatorSummary from "../../components/Portfolio/Calculator";
+import PortfolioList from "../../components/Portfolio/PortfolioList/PortfolioList";
+import Calculator from "../../components/Portfolio/Calculator/Calculator";
 
-const Calculator = () => {
+const Portfolio = () => {
   const [stock, setStock] = useState<any[]>([]);
   const [totalStock, setTotalStock] = useState(0);
 
@@ -21,17 +21,13 @@ const Calculator = () => {
     <div>
       <Header />
       <PortfolioLayout>
-        <h1>Dividend calculator</h1>
-        <PortfolioHeader>
-          <h1>Your Amazing Portfolio</h1>
-        </PortfolioHeader>
-        <CalculatorSummary totalStock={totalStock} />
+        <Calculator />
         <PortfolioForm stock={stock} setStock={setStock} />
 
-        <Portfolio />
+        <PortfolioList />
       </PortfolioLayout>
     </div>
   );
 };
 
-export default Calculator;
+export default Portfolio;

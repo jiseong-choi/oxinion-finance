@@ -1,9 +1,13 @@
 import React from "react";
-import { SummaryContainer } from "./styles";
+import { PortfolioHeader, SummaryContainer } from "./styles";
 
 const Calculator = ({ totalStock }: any) => {
   return (
     <SummaryContainer>
+      <h1>Dividend calculator</h1>
+      <PortfolioHeader>
+        <h1>Your Amazing Portfolio</h1>
+      </PortfolioHeader>
       <div>
         <p>Portfolio Value</p>
         <h3>${totalStock}</h3>
