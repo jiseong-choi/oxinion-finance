@@ -12,4 +12,11 @@ export const PortfolioHeader = styled.div`
   padding: 30px;
   font-size: 1.5rem;
   text-align: center;
+  display: flex;
+`;
+
+export const CalculatorContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
