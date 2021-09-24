@@ -23,6 +23,7 @@ const update = require("./routes/update");
 const deletes = require("./routes/delete");
 
 // API Routes
+app.use("/", (req, res) => res.send("API Running"));
 app.use("/create", create);
 app.use("/get", get);
 app.use("/update", update);
