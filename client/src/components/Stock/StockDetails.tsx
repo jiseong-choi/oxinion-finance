@@ -5,29 +5,22 @@ import Header from "../common/Header/Header";
 import BarChart from "../common/Chart/BarChart";
 
 const StockDetails = () => {
-  const { ticker }: any = useParams();
+  const { symbol }: any = useParams();
   const [stockDetails, setStockDetails] = useState();
 
   // Using useEffect to call the API once mounted
   useEffect(() => {
     axios
-      .get(`https://dividenddb.herokuapp.com/stocks/${ticker}`)
+      .get(`http://api.oxinion.com/finance/stocks?symbol=${symbol}`)
       .then((res) => {
-        const responseStockDetails = res.data;
+        const responseStockDetails = res.data[0];
         setStockDetails(responseStockDetails);
       });
-  }, [ticker]);
+  }, [symbol]);
 
-  // console.log(stockDetails);
+  console.log(stockDetails);
 
-  const {
-    name,
-    ticker: stockTicker,
-    sector,
-    divHistory,
-  }: any = stockDetails || {};
-
-  console.log(divHistory);
+  const { name, symbol: stockTicker, sector }: any = stockDetails || {};
 
   return (
     <div>
