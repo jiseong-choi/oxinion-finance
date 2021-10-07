@@ -1,16 +1,18 @@
 import React from "react";
 import Header from "../../components/common/Header/Header";
-import ScreenerMenu from "../../components/Screener/Screener";
-import ScreenList from "../../components/Screener/ScreenerList/ScreenerList";
+import ScreenerMenu from "./Screener/Screener";
+import ScreenList from "./Screener/ScreenerList/ScreenerList";
 import { ScrennerContainer } from "./styles";
 
 const Screener = () => {
   return (
     <ScrennerContainer>
       <Header />
-      <h2>Screener</h2>
+      <h1>Screener</h1>
+      <h2>Top dividend stocks</h2>
       <ScreenerMenu />
       <ScreenList />
+      <div className="main">main</div>
     </ScrennerContainer>
   );
 };

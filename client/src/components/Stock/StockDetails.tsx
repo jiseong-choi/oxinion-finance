@@ -4,7 +4,7 @@ import axios from "axios";
 import Header from "../common/Header/Header";
 import BarChart from "../common/Chart/BarChart";
 
-const Stock = () => {
+const StockDetails = () => {
   const { ticker }: any = useParams();
   const [stockDetails, setStockDetails] = useState();
 
@@ -42,4 +42,4 @@ const Stock = () => {
   );
 };
 
-export default Stock;
+export default StockDetails;

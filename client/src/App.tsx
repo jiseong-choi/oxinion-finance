@@ -6,7 +6,7 @@ import Screener from "./pages/ScreenerPage/Screener";
 import Calendar from "./pages/CalendarPage/CalendarPage";
 import Docs from "./pages/DocPage/index";
 // import StockList from "./components/StockList/StockList";
-import Stock from "./components/Stock/Stock";
+import StockDetails from "./components/Stock/StockDetails";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/calendar" component={Calendar} />
           <Route path="/docs" component={Docs} />
           {/* <Route exact path="/stocks" children={<StockList />} /> */}
-          <Route path="/stocks/:ticker" children={<Stock />} />
+          <Route path="/stocks/:symbol" children={<StockDetails />} />
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>

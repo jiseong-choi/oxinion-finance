@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { StockListContainer } from "./styles";
 import { CircularProgress } from "@material-ui/core";
-import StockCard from "../../Stock/StockCard";
+import StockCard from "../../../../components/Stock/StockCard";
 
 const ScreenerList = () => {
   const [stocks, setStocks] = useState([]);
