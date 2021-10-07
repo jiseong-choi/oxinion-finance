@@ -11,7 +11,7 @@ const StockDetails = () => {
   // Using useEffect to call the API once mounted
   useEffect(() => {
     axios
-      .get(`http://api.oxinion.com/finance/stocks?symbol=${symbol}`)
+      .get(`https://oxinionapi.herokuapp.com/stocks?symbol=${symbol}`)
       .then((res) => {
         const responseStockDetails = res.data[0];
         setStockDetails(responseStockDetails);
@@ -31,6 +31,7 @@ const StockDetails = () => {
         <small>{`Stock Symbol: ${stockTicker}`}</small>
         <h3> {sector} </h3>
         <BarChart />
+        why not work?
       </div>
     </div>
   );
