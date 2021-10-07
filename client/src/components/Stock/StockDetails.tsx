@@ -27,6 +27,7 @@ const StockDetails = () => {
       <Header />
       <div style={{ marginTop: "5rem" }}>
         <h1>{name}</h1>
+        testtest
         <small>{`Stock Symbol: ${stockTicker}`}</small>
         <h3> {sector} </h3>
         <BarChart />
