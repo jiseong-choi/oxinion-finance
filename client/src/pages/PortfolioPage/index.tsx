@@ -5,6 +5,8 @@ import PortfolioForm from "../../components/Portfolio/PortfolioForm/PortfolioFor
 import PortfolioList from "../../components/Portfolio/PortfolioList/PortfolioList";
 import Calculator from "../../components/Portfolio/Calculator/Calculator";
 
+import pic from "../../Assets/Images/chart.png";
+
 const Portfolio = () => {
   // let tempDiv = 0;
   // for (let i = 0; i < stock.length; i++) {
@@ -33,7 +35,17 @@ const Portfolio = () => {
           <small>Bonds</small>
           <small>Commodities</small>
           <small>Cash</small>
-
+        </div>
+        <div style={{ display: "flex", width: "100%" }}>
+          <h1>Model Portfolio</h1>
+          <option value="opti">
+            <select name="Permanent" id="">
+              Permanent
+            </select>
+          </option>
+          <img style={{ width: "30%" }} src={pic} alt="" />
+          <h1>Your Portoflio</h1>
+          <img style={{ width: "30%" }} src={pic} alt="" />
         </div>
         <PortfolioList />
       </PortfolioLayout>
