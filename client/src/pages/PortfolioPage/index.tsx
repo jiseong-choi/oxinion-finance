@@ -21,14 +21,20 @@ const Portfolio = () => {
       <p>
         3. The proportion of equity, bond, real estate, alternatives and cash{" "}
       </p>
-      *Stock picking comes in the END!!!
+      *Stock picking comes in the END!!!a
       <p>
         <strong>Do rebalancing with OXF!</strong>
       </p>
       <PortfolioLayout>
         <Calculator />
         <PortfolioForm />
+        <div>
+          <small>Stocks</small>
+          <small>Bonds</small>
+          <small>Commodities</small>
+          <small>Cash</small>
 
+        </div>
         <PortfolioList />
       </PortfolioLayout>
     </div>

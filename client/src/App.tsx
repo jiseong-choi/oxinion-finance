@@ -18,7 +18,7 @@ function App() {
           <Route path="/calendar" component={Calendar} />
           <Route path="/docs" component={Docs} />
           {/* <Route exact path="/stocks" children={<StockList />} /> */}
-          <Link to="/stocks/:symbol" children={<StockDetails />} />
+          <Route path="/stocks/:symbol" children={<StockDetails />} />
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>
