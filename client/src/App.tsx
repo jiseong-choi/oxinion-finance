@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/MainPage/Home";
 import Portfolio from "./pages/PortfolioPage/index";
 import Screener from "./pages/ScreenerPage/Screener";
@@ -18,7 +18,7 @@ function App() {
           <Route path="/calendar" component={Calendar} />
           <Route path="/docs" component={Docs} />
           {/* <Route exact path="/stocks" children={<StockList />} /> */}
-          <Route path="/stocks/:symbol" children={<StockDetails />} />
+          <Link to="/stocks/:symbol" children={<StockDetails />} />
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>

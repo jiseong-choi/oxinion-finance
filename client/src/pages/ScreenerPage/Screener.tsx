@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/common/Header/Header";
-import ScreenerMenu from "./Screener/Screener";
+import ScreenerMenu from "./Screener/ScreenerMenu";
 import ScreenList from "./Screener/ScreenerList/ScreenerList";
 import { ScrennerContainer } from "./styles";
 
