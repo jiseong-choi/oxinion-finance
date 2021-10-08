@@ -15,7 +15,7 @@ const Portfolio = () => {
   return (
     <div>
       <Header />
-      <h1>The state of Asset Allocation</h1>
+      <h1>The stage of Asset Allocation</h1>
       <p>1. Write your target to remember</p>
       <p>2. Expected profit(%), the period, how much you can risk</p>
       <p>
