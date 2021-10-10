@@ -6,6 +6,7 @@ import PortfolioList from "../../components/Portfolio/PortfolioList/PortfolioLis
 import Calculator from "../../components/Portfolio/Calculator/Calculator";
 
 import pic from "../../Assets/Images/chart.png";
+import CustomSelect from "../../components/Portfolio/CustomSelect";
 
 const Portfolio = () => {
   // let tempDiv = 0;
@@ -36,13 +37,10 @@ const Portfolio = () => {
           <small>Commodities</small>
           <small>Cash</small>
         </div>
-        <div style={{ display: "flex", width: "100%" }}>
+        <div style={{ display: "flex", width: "100%", flexDirection: 'column' }}>
           <h1>Model Portfolio</h1>
-          <option value="opti">
-            <select name="Permanent" id="">
-              Permanent
-            </select>
-          </option>
+          <CustomSelect />
+          <br />
           <img style={{ width: "30%" }} src={pic} alt="" />
           <h1>Your Portoflio</h1>
           <img style={{ width: "30%" }} src={pic} alt="" />
