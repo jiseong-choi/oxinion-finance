@@ -162,13 +162,6 @@ How to design API
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/40842018/122681329-a7c58380-d22e-11eb-8bed-8852b617dd36.gif)
 
-## About budget - How OXINION Finance would monetize
-
-1. Content management
-2. Financial Data through API
-3. Ad revenue
-4. Subscription pro model tools
-
 ## Things to update
 
 - add "createdAt, updatedAt" fields in MongoDB
@@ -192,3 +185,14 @@ How to design API
 ## How to reach me
 
 - Instagram: <https://instagram.com/iDevBrandon>
+
+## About Money - How OXINION Finance would monetize
+
+1. Content management
+2. Financial Data through API
+3. Ad revenue
+4. Subscription pro model tools
+
+## SUPPORT
+
+PayPal – paypal.me/idevbrandon
