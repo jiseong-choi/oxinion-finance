@@ -1,16 +1,22 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../app/store";
+// import axios from "axios";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 import { ListContainer, PortfolioHead } from "./styles";
 
-const Portfolio = () => {
-  const [data, setData] = useState([]);
+const PortfolioList = () => {
+  const portoflioData = useSelector(
+    (state: RootState) => state.portfolio.portfolio
+  );
 
-  useEffect(() => {
-    axios
-      .get("https://api.finance.oxinion.com/get")
-      .then((res: any) => setData(res.data));
-  }, []);
+  // const [data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   axios
+  //     .get("https://api.finance.oxinion.com/get")
+  //     .then((res: any) => setData(res.data));
+  // }, []);
 
   return (
     <ListContainer>
@@ -19,7 +25,7 @@ const Portfolio = () => {
         <p>Shares</p>
         <p>Avg Cost</p>
       </PortfolioHead>
-      {data.map((stock: any) => (
+      {/* {data.map((stock: any) => (
         <PortfolioItem
           ticker={stock.ticker}
           id={stock._id}
@@ -27,9 +33,19 @@ const Portfolio = () => {
           share={stock.share}
           cost={stock.cost}
         />
-      ))}
+      ))} */}
+
+      {portoflioData.map((asset) => {
+        return (
+          <PortfolioItem
+            ticker={asset.ticker}
+            share={asset.shares}
+            cost={asset.cost}
+          />
+        );
+      })}
     </ListContainer>
   );
 };
 
-export default Portfolio;
+export default PortfolioList;

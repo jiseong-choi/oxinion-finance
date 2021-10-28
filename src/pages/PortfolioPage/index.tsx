@@ -7,6 +7,7 @@ import Calculator from "../../components/Portfolio/Calculator/Calculator";
 
 import pic from "../../Assets/Images/chart.png";
 import CustomSelect from "../../components/Portfolio/CustomSelect";
+ 
 
 const Portfolio = () => {
   // let tempDiv = 0;
@@ -37,7 +38,9 @@ const Portfolio = () => {
           <small>Commodities</small>
           <small>Cash</small>
         </div>
-        <div style={{ display: "flex", width: "100%", flexDirection: 'column' }}>
+        <div
+          style={{ display: "flex", width: "100%", flexDirection: "column" }}
+        >
           <h1>Model Portfolio</h1>
           <CustomSelect />
           <br />
