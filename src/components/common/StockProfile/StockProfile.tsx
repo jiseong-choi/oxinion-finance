@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../Header/Header";
 import { ProfileContainer, ProfileIntro } from "./styles";
+import TradingviewChart from "../TradingView/TradingviewChart";
 
 const StockProfile = () => {
   const { ticker }: any = useParams();
@@ -25,10 +26,7 @@ const StockProfile = () => {
     ticker: stockTicker,
     sector,
     imageUrl,
-    website,
   }: any = stockDetails || {};
-
-  let officialWeb = [...website][0].web;
 
   return (
     <div>
@@ -44,9 +42,10 @@ const StockProfile = () => {
         <div>
           hey its here!!! for individual stock profile page
           <h3> {sector} </h3>
-          <p>
-            <a href={officialWeb}>{officialWeb}</a>
-          </p>
+        </div>
+
+        <div>
+          <TradingviewChart />
         </div>
       </ProfileContainer>
     </div>
