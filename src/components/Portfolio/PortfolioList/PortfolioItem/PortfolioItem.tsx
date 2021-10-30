@@ -104,7 +104,7 @@ const PortfolioItem = ({ ticker, share, cost }: PortfolioItemTypes) => {
     <div>
       <p>{share}</p>
       <p>{cost}</p>
-      <h1>
+      <h1 style={{ textTransform: "uppercase" }}>
         <Link to={`/stocks/${ticker}`}>{ticker}</Link>
       </h1>
       {/* <Route path="/stocks/:symbol" component={StockProfile} /> */}

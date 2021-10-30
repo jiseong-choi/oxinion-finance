@@ -12,8 +12,8 @@ export interface Portfolio {
 
 const initialState: PortfolioState = {
   portfolio: [
-    { ticker: "AAPL", shares: 10.234, cost: 130 },
-    { ticker: "MSFT", shares: 10.234, cost: 150 },
+    { ticker: "aapl", shares: 10.234, cost: 130 },
+    { ticker: "msft", shares: 10.234, cost: 150 },
   ],
 };
 
