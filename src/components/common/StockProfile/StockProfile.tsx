@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../Header/Header";
+import { ProfileContainer, ProfileIntro } from "./styles";
 
 const StockProfile = () => {
   const { ticker }: any = useParams();
@@ -19,16 +20,35 @@ const StockProfile = () => {
 
   console.log(stockDetails);
 
-  const { ticker: stockTicker, sector }: any = stockDetails || {};
+  const {
+    name,
+    ticker: stockTicker,
+    sector,
+    imageUrl,
+    website,
+  }: any = stockDetails || {};
+
+  let officialWeb = [...website][0].web;
 
   return (
     <div>
       <Header />
-      <div style={{ marginTop: "5rem" }}>
-        <small>{`Stock Symbol: ${stockTicker}`}</small>
-        <h3> {sector} </h3>
-        hey its me here!!! for individual stock profile page
-      </div>
+      <ProfileContainer>
+        <ProfileIntro>
+          <img src={imageUrl} alt="" />
+          <div>
+            <h4>{name}</h4>
+            <small>{`Stock Symbol: ${stockTicker}`}</small>
+          </div>
+        </ProfileIntro>
+        <div>
+          hey its here!!! for individual stock profile page
+          <h3> {sector} </h3>
+          <p>
+            <a href={officialWeb}>{officialWeb}</a>
+          </p>
+        </div>
+      </ProfileContainer>
     </div>
   );
 };

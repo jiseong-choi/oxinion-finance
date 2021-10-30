@@ -14,6 +14,18 @@ export const StockAlert = styled.p`
   width: 100%;
 `;
 
-export const Checkbox = styled.div``;
+export const ProfileContainer = styled.div`
+  margin-top: 5rem;
+  width: 50%;
+`;
 
-export const RemoveBox = styled.div``;
+export const ProfileIntro = styled.div`
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+`;
+
+export const ProfileIntro1 = styled.div``;
+export const ProfileIntro2 = styled.div``;
+export const ProfileIntro3 = styled.div``;
+export const ProfileIntro4 = styled.div``;
