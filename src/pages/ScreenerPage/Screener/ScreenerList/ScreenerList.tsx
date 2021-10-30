@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { StockListContainer } from "./styles";
 import { CircularProgress } from "@material-ui/core";
-import StockCard from "../../../../components/Stock/StockCard";
+import StockProfile from "../../../../components/common/StockProfile/StockProfile";
 
 const ScreenerList = () => {
   const [stocks, setStocks] = useState([]);
@@ -20,7 +20,7 @@ const ScreenerList = () => {
       {stocks ? (
         <div>
           {stocks.map((stock: any) => (
-            <StockCard stock={stock} key={stock.ticker} />
+            <StockProfile key={stock.ticker} />
           ))}
         </div>
       ) : (

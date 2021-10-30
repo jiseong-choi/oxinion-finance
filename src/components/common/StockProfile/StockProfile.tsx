@@ -1,40 +1,44 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Header from "../common/Header/Header";
-import BarChart from "../common/Chart/BarChart";
+import Header from "../Header/Header";
 
-const StockDetails = () => {
-  const { symbol }: any = useParams();
+const StockProfile = () => {
+  const { ticker }: any = useParams();
   const [stockDetails, setStockDetails] = useState();
 
   // Using useEffect to call the API once mounted
   useEffect(() => {
     axios
-      .get(`https://oxinionapi.herokuapp.com/stocks?symbol=${symbol}`)
+      .get(`https://oxinionapi.herokuapp.com/stocks?ticker=${ticker}`)
       .then((res) => {
         const responseStockDetails = res.data[0];
         setStockDetails(responseStockDetails);
       });
-  }, [symbol]);
+  }, [ticker]);
 
   console.log(stockDetails);
 
-  const { name, symbol: stockTicker, sector }: any = stockDetails || {};
+  const { ticker: stockTicker, sector }: any = stockDetails || {};
 
   return (
     <div>
       <Header />
       <div style={{ marginTop: "5rem" }}>
-        <h1>{name}</h1>
-        testtest
         <small>{`Stock Symbol: ${stockTicker}`}</small>
         <h3> {sector} </h3>
-        <BarChart />
-        why not work?
+        hey its me here!!! for individual stock profile page
       </div>
     </div>
   );
 };
 
-export default StockDetails;
+export default StockProfile;
+
+// import React from "react";
+
+// const StockDetails = () => {
+//   return <div></div>;
+// };
+
+// export default StockDetails;

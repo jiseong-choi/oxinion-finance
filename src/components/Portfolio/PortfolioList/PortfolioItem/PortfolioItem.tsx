@@ -91,6 +91,7 @@
 // export default PortfolioItem;
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface PortfolioItemTypes {
   ticker: string;
@@ -101,9 +102,12 @@ interface PortfolioItemTypes {
 const PortfolioItem = ({ ticker, share, cost }: PortfolioItemTypes) => {
   return (
     <div>
-      <h2>{ticker}</h2>
       <p>{share}</p>
       <p>{cost}</p>
+      <h1>
+        <Link to={`/stocks/${ticker}`}>{ticker}</Link>
+      </h1>
+      {/* <Route path="/stocks/:symbol" component={StockProfile} /> */}
     </div>
   );
 };
