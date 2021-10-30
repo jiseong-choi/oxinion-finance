@@ -45,7 +45,7 @@ const StockProfile = () => {
         </div>
 
         <div>
-          <TradingviewChart />
+          <TradingviewChart stockDetails={stockDetails} />
         </div>
       </ProfileContainer>
     </div>

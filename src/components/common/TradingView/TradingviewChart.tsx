@@ -1,14 +1,13 @@
 import { AdvancedChart } from "react-tradingview-embed";
 
-export default function TradingviewChart() {
+export default function TradingviewChart({ stockDetails }: any) {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
       <AdvancedChart
         widgetProps={{
           width: "100%",
           height: 610,
-          symbol: "aapl",
+          symbol: stockDetails?.ticker,
           interval: "W",
           timezone: "Europe/Rome",
           theme: "dark",
