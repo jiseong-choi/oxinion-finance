@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../Header/Header";
-import { ProfileContainer, ProfileIntro } from "./styles";
+import {
+  ChartContainer,
+  ProfileContainer,
+  ProfileImage,
+  ProfileIntro,
+} from "./styles";
 import TradingviewChart from "../TradingView/TradingviewChart";
 
 const StockProfile = () => {
@@ -33,31 +38,20 @@ const StockProfile = () => {
       <Header />
       <ProfileContainer>
         <ProfileIntro>
-          <img src={imageUrl} alt="" />
+          <ProfileImage src={imageUrl} alt="stock logo" />
           <div>
             <h4>{name}</h4>
             <small>{`Stock Symbol: ${stockTicker}`}</small>
+            <h3> {sector} </h3>
           </div>
         </ProfileIntro>
-        <div>
-          hey its here!!! for individual stock profile page
-          <h3> {sector} </h3>
-        </div>
 
-        <div>
+        <ChartContainer>
           <TradingviewChart stockDetails={stockDetails} />
-        </div>
+        </ChartContainer>
       </ProfileContainer>
     </div>
   );
 };
 
 export default StockProfile;
-
-// import React from "react";
-
-// const StockDetails = () => {
-//   return <div></div>;
-// };
-
-// export default StockDetails;
