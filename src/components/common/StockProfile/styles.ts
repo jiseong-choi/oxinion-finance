@@ -16,8 +16,7 @@ export const StockAlert = styled.p`
 
 export const ProfileContainer = styled.div`
   margin-top: 5rem;
-  width: 50%;
-`;
+ `;
 
 export const ProfileIntro = styled.div`
   background-color: #ffffff;

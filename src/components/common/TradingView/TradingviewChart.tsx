@@ -6,7 +6,7 @@ export default function TradingviewChart() {
       <h1>Hello CodeSandbox</h1>
       <AdvancedChart
         widgetProps={{
-          width: 980,
+          width: "100%",
           height: 610,
           symbol: "aapl",
           interval: "W",
