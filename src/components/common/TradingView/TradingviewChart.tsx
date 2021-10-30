@@ -21,7 +21,6 @@ export default function TradingviewChart({ stockDetails }: any) {
           container_id: "tradingview_929ec",
         }}
       />
-      <h2>Start editing to see some magic happen!</h2>
     </div>
   );
 }
