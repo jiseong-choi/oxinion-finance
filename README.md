@@ -2,6 +2,10 @@
 
 <img width="417" alt="Screen Shot 2021-09-20 at 12 19 12 PM" src="https://user-images.githubusercontent.com/40842018/133954051-5d15091f-4d92-438b-810b-b09a1685164d.png">
 
+## Problem
+Asset allocation for everyone
+
+
 ## 🎯 Financial Data
 
 - A financial tool to analyze and visualize stock data.
