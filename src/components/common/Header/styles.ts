@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const HeaderGroup = styled.header`
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   height: 4rem;
   background-color: #f4f7fb;
@@ -69,8 +69,9 @@ export const NavLink = styled.li`
   text-decoration: none;
 
   a {
-    color: black;
+    color: #05164d;
     text-decoration: none;
+    font-weight: bold;
   }
 `;
 

@@ -5,6 +5,8 @@ import Portfolio from "./pages/PortfolioPage/index";
 import Screener from "./pages/ScreenerPage/Screener";
 import Calendar from "./pages/CalendarPage/CalendarPage";
 import Docs from "./pages/DocPage/index";
+import Crypto from "./pages/CryptoPage/CryptoPage";
+
 // import StockList from "./components/StockList/StockList";
 import StockProfile from "./components/common/StockProfile/StockProfile";
 
@@ -17,6 +19,8 @@ function App() {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/docs" component={Docs} />
+          <Route path="/crypto" component={Crypto} />
+
           {/* <Route exact path="/stocks" children={<StockList />} /> */}
           <Route path="/stocks/:ticker" children={<StockProfile />} />
           <Route exact path="/" component={Home} />
