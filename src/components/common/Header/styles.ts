@@ -56,11 +56,21 @@ export const MobileMenu = styled.div`
 export const NavLinks = styled.ul`
   display: none;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 
   @media (min-width: 768px) {
     display: flex;
+  }
+`;
+
+export const NavLink = styled.li`
+  margin-left: 1rem;
+  text-decoration: none;
+
+  a {
+    color: black;
+    text-decoration: none;
   }
 `;
 

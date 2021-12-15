@@ -7,6 +7,7 @@ import {
   StyledLogo,
   Input,
   MobileMenu,
+  NavLink,
 } from "./styles";
 import { FaTimes, FaBars } from "react-icons/fa";
 import mobileLogo from "../../../Assets/Images/updividend_logo.png";
@@ -28,18 +29,24 @@ const Header = () => {
           {click ? <FaTimes /> : <FaBars />}
         </MobileMenu>
         <NavLinks>
-          <li>
-            <Link to="/calendar">Calendar</Link>
-          </li>
-          <li>
+          <NavLink>
             <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/screener">Screener</Link>
-          </li>
-          <li>
+          </NavLink>
+          <NavLink>
+            <Link to="/crypto">Crypto</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/screener">Screeners</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/calendar">Calendar</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/tools">Tools</Link>
+          </NavLink>
+          <NavLink>
             <Link to="/docs">Docs</Link>
-          </li>
+          </NavLink>
         </NavLinks>
       </Nav>
     </HeaderGroup>

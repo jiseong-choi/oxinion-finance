@@ -52,6 +52,13 @@ const StockProfile = () => {
       </ProfileContainer>
       <div>
         <h2>Start editing to see some magic happen!</h2>
+        <h3>Show EPS chart - Forward 12M EPS</h3>
+        <h3>Show a chart that OXF user's avg cost price</h3>
+        <p>
+          Warren Buffet "Price is what you pay Value is What you Get": Don't pay
+          too much.
+        </p>
+        <a href="https://novelinvestor.com/asset-class-returns/"><img src="https://149347908.v2.pressablecdn.com/wp-content/uploads/2021/07/novelinvestor-asset-class-returns-1H-2021.png" alt="Novel Investor Asset Class Returns Table"/></a><small>Source: <a href="https://novelinvestor.com/">NovelInvestor.com</a></small>
       </div>
     </div>
   );
