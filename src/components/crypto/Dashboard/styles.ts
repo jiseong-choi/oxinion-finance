@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const DashboardContainer = styled.div`
   box-sizing: border-box;
   margin: 0px 0px 16px;
-  border: 1px solid #eff2f5
+  border: 1px solid #eff2f5;
   border-radius: 16px;
   position: relative;
+  margin: 1rem;
 `;
 
 export const PrimaryCurrency = styled.div`
